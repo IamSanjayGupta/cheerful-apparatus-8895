@@ -1,0 +1,291 @@
+#login_container{
+    height: 540px;
+    width: 500px;
+    margin-left: 230px;
+    margin-top: 90px;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+   
+}
+#zoom{
+    height: 60px;
+    width: 330px;
+    margin-top: 40px;
+    margin-left: 20px; */
+         
+}
+#sets{
+    margin-top: 6px;
+    font-size: x-large;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+#statement{
+    margin-left: 40px; 
+    margin-top: 10px;  
+}
+#email{
+    border: 4px solid rgb(244, 240, 237) ;
+    height: 40px;
+    width: 80%;
+    margin-left: 30px;
+    font-size: large;
+    background-color: rgb(244, 240, 237);
+    border-radius:5px;
+}
+#login_button{
+    /* margin-bottom: 30px; */
+    margin-top: 40px;
+    height: 45px;
+    width: 82%;
+    margin-left: 30px;
+    font-size: large;
+    border: 2px solid rgb(26, 126, 241) ;
+    background-color: rgb(26, 126, 241);
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: x-large;
+    font-weight: bold;
+}
+#forgot{
+    margin-top: 30px;
+    height: 40px;
+    width: 82%;
+    margin-left: 30px;
+    font-size: large;
+    background-color: rgb(251, 251, 251);
+    color: rgb(26, 126, 241);
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid rgb(251, 251, 251);
+}
+#line{
+    border: 0.1px solid gray;
+    margin-left: 30px;
+    width: 80%;
+    background-color: rgb(243, 243, 243);
+}
+#sign_in_using{
+    font-size: larger;
+}
+#under_p{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#logee{
+    border: 1px solid red ;
+    height:50px;
+     width: 82%; 
+    margin-left: 30px;  
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+#paper{
+    border: 1px solid fuchsia;
+    height: 100%;
+    width:100% ;
+}
+#none{
+    height: 100%;
+    width: 100%;
+    
+}
+ 
+/* ..............................enginsign.css......................... */
+#logo{
+    
+    text-align: center;
+    margin-top: 70px;
+}
+#heat{
+    height: 100%;
+    width: 350px;
+    text-align: center;
+}
+#frame{
+    /* border: 1px solid red; */
+    height: 350px;
+    width: 490px;
+    margin: auto;
+    padding-top: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgb(245, 246, 247);
+}
+#name{
+    border: 1px solid rgb(185, 184, 184) ;
+    margin-bottom: 40px;
+    height: 40px;
+    width: 78%;
+   margin-left: 50px;
+   font-size: larger;
+   background-color:rgb(245, 246, 247);
+   margin-bottom: 30px;
+   border-radius: 3px;
+}
+#sign_up{
+    background-color: green;
+    border: 1px solid green;
+    height: 40px;
+    width: 40%;
+    font-weight: bold;
+    font-size: larger;
+ margin-left: 150px;
+ /* margin-bottom: 20px; */
+ color: white;
+   
+}#sign_agree{
+    font-size: x-small;
+    margin-left: 50px;
+    text-align: center;
+    padding: 20px;
+}
+#foot_copy{
+    text-align: center;
+    padding: 20px;
+}
+#bodyies{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+#icon{
+    height: auto;
+    width: 22px;
+    margin-right: 10px;
+    /* position: absolute;
+    content: -10; */
+}
+/*............................................. event.css.................................. */
+#event{
+  
+    height: 140px;
+    width: 100%;
+    font-size: xx-large;
+    font-weight: bold;
+    background: url(https://www.manageengine.com/images/new-solutions-banner.jpg);
+    color: white;
+    text-align: center;
+   
+}h1{
+    padding-top: 30px;
+}
+
+#event_navigation{
+  
+   
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+   
+    padding-bottom: 30px;
+   
+
+}
+#event_navigation ul li #activeclasses{
+    border-bottom:4px solid rgb(25, 60, 149) ;
+    border-bottom-width:4px ;
+    border-bottom-style:solid ;
+    border-bottom-color:rgb(25, 60, 149) ;
+    opacity: 1;
+}
+#event_navigation ul li{
+    font-size: 1.3em;
+    color: #193c95;
+    display: inline-block;
+    padding: 15px 20px 15px 20px;
+    position: relative;
+}
+#events{
+   
+    margin-bottom: 30px;
+    
+    height: 40px;
+   justify-content: end;
+    
+    
+
+}
+#Selectbytypes{
+   
+    background-color: white ;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 35px;
+    
+      height: 100%;
+      width: 200px;
+      margin-left: 200px;
+      border-radius: 7px;
+    }
+
+#Selectbytypes:hover{
+    background-color: rgb(1, 1, 21);
+    color: white;
+    
+}
+#container{
+    /* border: 1px solid red; */
+   gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 30px;
+}
+
+#flex{
+  
+    height: 275px;
+    width: 318px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 7px;
+    margin-bottom: 10px; 
+}
+#flex>img{
+    width: 300px;
+    height: 90px;
+
+}
+h2{
+    font-size: medium;
+    margin-left: 10px;
+}
+p{
+    margin-left: 10px;
+}
+#resister{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(221, 156, 33);
+}
+/*............................................... pasteevent.css ..................................*/
+#eventss{
+    
+   margin-top: 200px;
+    height: 50px;
+ 
+    display: flex;
+    justify-content: end;
+    
+    
+
+}
+#Selectbytype{
+   
+background-color: white ;
+font-weight: bold;
+text-align: center;
+margin-left: 35px;
+
+  height: 100%;
+  width: 200px;
+  /* margin-left: 200px; */
+  border-radius: 7px;
+}
+
+#Selectbytype:hover{
+    background-color: rgb(1, 1, 21);
+    color: white;
+    
+}
