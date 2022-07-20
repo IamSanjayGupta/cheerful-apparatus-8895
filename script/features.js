@@ -1,4 +1,4 @@
-import { subfooter,subnavbar,topnavbar } from "./component.js";
+import { subfooter,subnavbar,topnavbar } from "../components/proto.js";
 
 document.getElementById("sub-footer").innerHTML= subfooter()
 document.getElementById("prod-navbar").innerHTML= topnavbar()
