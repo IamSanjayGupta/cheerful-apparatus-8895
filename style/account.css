@@ -3,26 +3,30 @@
     width: 500px;
     margin-left: 230px;
     margin-top: 90px;
-    /* margin: auto; */
+   
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
    
 }
-img{
+#zoom{
     height: 60px;
-    width: 350px;
+    width: 330px;
     margin-top: 40px;
+    margin-left: 20px; */
          
 }
-#set{
-    margin-left: 30px;
-    margin-bottom: 10px;
+#sets{
+    margin-top: 6px;
+    font-size: x-large;
+    margin-left: 40px;
+    margin-bottom: 0px;
 }
-p{
-    margin-left: 30px; 
+#statement{
+    margin-left: 40px; 
     margin-top: 10px;  
 }
-#email{border: 4px solid rgb(244, 240, 237) ;
+#email{
+    border: 4px solid rgb(244, 240, 237) ;
     height: 40px;
     width: 80%;
     margin-left: 30px;
@@ -33,7 +37,7 @@ p{
 #login_button{
     /* margin-bottom: 30px; */
     margin-top: 40px;
-    height: 40px;
+    height: 45px;
     width: 82%;
     margin-left: 30px;
     font-size: large;
@@ -45,7 +49,7 @@ p{
     font-weight: bold;
 }
 #forgot{
-    margin-top: 40px;
+    margin-top: 30px;
     height: 40px;
     width: 82%;
     margin-left: 30px;
@@ -65,41 +69,36 @@ p{
 #sign_in_using{
     font-size: larger;
 }
-#loge{border: 1px solid red ;
+#under_p{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#logee{
+    border: 1px solid red ;
     height:50px;
-    width: 88%;
+     width: 82%; 
     margin-left: 30px;  
-    
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
 }
-#loge div{
-    border: 1px solid green;
-    gap: 7px;
- width: 88%;
- height: 50px;  
+#paper{
+    border: 1px solid fuchsia;
+    height: 100%;
+    width:100% ;
 }
-#loge >div>img{
-    margin-bottom: 50px;
-    /* width: 100%;
-    height: 100%; */
-    width: 88%;
- height: 50px;
+#none{
+    height: 100%;
+    width: 100%;
     
-  
-    
-
 }
-/* enginsign.css */
+ 
+/* ..............................enginsign.css......................... */
 #logo{
-    /* border: 1px solid red; */
-         
-    /* height:50px ; */
-    /* width: 550; */
+    
     text-align: center;
     margin-top: 70px;
 }
-img{
+#heat{
     height: 100%;
     width: 350px;
     text-align: center;
@@ -145,7 +144,7 @@ img{
     text-align: center;
     padding: 20px;
 }
-body{
+#bodyies{
     height: 100%;
     width: 100%;
     background-color: whitesmoke;
@@ -157,7 +156,7 @@ body{
     /* position: absolute;
     content: -10; */
 }
-/* event.css */
+/*............................................. event.css.................................. */
 #event{
   
     height: 140px;
@@ -200,27 +199,29 @@ body{
     position: relative;
 }
 #events{
-    /* display: block; */margin-bottom: 30px;
-    margin-bottom: 80px;
-    height: 40px;
-    justify-items: end;
-    
-    
-
-}
-#Selectbytype{
    
-background-color: white ;
-font-weight: bold;
-text-align: center;
+    margin-bottom: 30px;
+    
+    height: 40px;
+   justify-content: end;
+    
+    
 
-  height: 100%;
-  width: 200px;
-  margin-left: 200px;
-  border-radius: 7px;
 }
+#Selectbytypes{
+   
+    background-color: white ;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 35px;
+    
+      height: 100%;
+      width: 200px;
+      margin-left: 200px;
+      border-radius: 7px;
+    }
 
-#Selectbytype:hover{
+#Selectbytypes:hover{
     background-color: rgb(1, 1, 21);
     color: white;
     
@@ -231,10 +232,6 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     margin-bottom: 30px;
-   
-    
-   
-
 }
 
 #flex{
@@ -243,11 +240,7 @@ text-align: center;
     width: 318px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     border-radius: 7px;
-    margin-bottom: 10px;
-   
-
-    
-   
+    margin-bottom: 10px; 
 }
 #flex>img{
     width: 300px;
@@ -266,33 +259,33 @@ p{
     font-size: xx-large;
     color: rgb(221, 156, 33);
 }
-/* pasteevent.css */
-#events{
-    border: 1px solid red;
-    width: 100%;
-   
-/* margin-bottom: 30px;
-margin-bottom: 80px; */
-height: 40px;
-/* justify-items: end; */
-
-
+/*............................................... pasteevent.css ..................................*/
+#eventss{
+    
+   margin-top: 200px;
+    height: 50px;
+ 
+    display: flex;
+    justify-content: end;
+    
+    
 
 }
 #Selectbytype{
-
-/* background-color: white ;
+   
+background-color: white ;
 font-weight: bold;
-text-align: center; */
+text-align: center;
+margin-left: 35px;
 
-height: 100%;
-width: 100px;
-/* margin-left: 200px;
-border-radius: 7px; */
+  height: 100%;
+  width: 200px;
+  /* margin-left: 200px; */
+  border-radius: 7px;
 }
 
 #Selectbytype:hover{
-background-color: rgb(1, 1, 21);
-color: white;
-
+    background-color: rgb(1, 1, 21);
+    color: white;
+    
 }
