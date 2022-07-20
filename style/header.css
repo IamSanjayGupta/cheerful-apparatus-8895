@@ -88,13 +88,13 @@ li > a {
 }
 .mainHeader {
    display: block;
-   /* border: 1px solid red; */
 }
 .topHeader {
    display: flex;
    justify-content: flex-end;
    height: 40px;
    color: gray;
+   margin-bottom: 2px;
 }
 
 .topHeader > .topHeader-rhs {
@@ -130,6 +130,7 @@ li > a {
    line-height: 2;
    font-size: 0.9em;
    display: none;
+   z-index: 99;
 }
 .contactDrop > a {
    font-size: 0.9em;
@@ -159,6 +160,7 @@ li > a {
    left: -200px;
    line-height: 2;
    display: none;
+   z-index: 99;
 }
 .userDrop > a {
    font-size: 0.9em;
@@ -185,7 +187,7 @@ li > a {
    border-bottom: 1px solid #1d2532;
    z-index: 9999;
    cursor: auto;
-   transition: all ease-in-out 1s;
+   z-index: 99;
 }
 .topHeader-rhs > li:nth-child(6):hover .searchDrop {
    transition: all 0.5s;
@@ -228,5 +230,37 @@ li > a {
 }
 
 .bottomHeader {
-   /* border: 1px solid yellow; */
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: white;
+   border-bottom: 1px solid gray;
+   border: 1px solid red;
+}
+.companyLogo {
+   width: 20%;
+   display: flex;
+   justify-content: center;
+}
+.companyLogo > img {
+   width: 70%;
+   height: 40px;
+}
+.companyLogo > img + img {
+   width: 40px;
+   height: 30px;
+}
+.mainNav {
+   width: 60%;
+   /* border: 1px solid red; */
+}
+.downloadBtn {
+   width: 20%;
+   /* border: 1px solid red; */
+}
+.sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
 }
