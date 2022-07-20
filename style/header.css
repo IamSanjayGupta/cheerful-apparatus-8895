@@ -124,7 +124,7 @@ li > a {
    color: #fff;
    width: 200px;
    padding: 5px 10px;
-   top: 40px;
+   top: 39px;
    right: 10;
    left: -4px;
    line-height: 2;
@@ -154,7 +154,7 @@ li > a {
    color: #fff;
    width: 240px;
    padding: 5px 10px;
-   top: 40px;
+   top: 39px;
    right: 0px;
    left: -200px;
    line-height: 2;
@@ -179,7 +179,7 @@ li > a {
    width: 100vw;
    height: 400px;
    padding: 5px 10px;
-   top: 40px;
+   top: 39px;
    right: -10px;
    display: none;
    border-bottom: 1px solid #1d2532;
@@ -200,6 +200,7 @@ li > a {
    margin: auto;
    margin-top: 40px;
    font-size: 25px;
+   font-weight: 600;
    text-align: center;
    color: rgb(81, 81, 81);
    border-radius: 5px;
