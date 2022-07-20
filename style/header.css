@@ -82,12 +82,9 @@
    box-sizing: border-box;
    font-family: "Zoho_Puvi_Regular";
 }
-a {
-   text-decoration: none;
-   color: white;
-}
+
 li > a {
-   color: #1d2532;
+   color: gray;
 }
 .mainHeader {
    display: block;
@@ -96,53 +93,58 @@ li > a {
 .topHeader {
    display: flex;
    justify-content: flex-end;
-   height: 50px;
+   height: 40px;
+   color: gray;
 }
 
 .topHeader > .topHeader-rhs {
-   width: 25%;
+   width: 27%;
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-between;
    list-style-type: none;
    border-bottom: 1px solid rgba(128, 128, 128, 0.725);
 }
 .topHeader > .topHeader-rhs > li {
+   text-decoration: none;
    cursor: pointer;
    position: relative;
    height: 100%;
    display: flex;
    align-items: center;
+   padding: 0px 5px;
 }
-.bottomHeader {
-   /* border: 1px solid yellow; */
+.topHeader > .topHeader-rhs > li > a {
+   text-decoration: none;
 }
 
 .contactDrop {
    position: absolute;
    background: #1d2532;
    color: #fff;
-   width: 250px;
+   width: 200px;
    padding: 5px 10px;
-   top: 50px;
+   top: 40px;
    right: 10;
-   left: 0;
+   left: -4px;
    line-height: 2;
+   font-size: 0.9em;
    display: none;
 }
 .contactDrop > a {
+   font-size: 0.9em;
    color: #ccc;
    padding: 2px;
    display: block;
-   line-height: 25px;
-   transition: all 0.3s;
+   line-height: 1.1;
+   transition: all 0.4s;
+   text-decoration: none;
 }
 .contactDrop > a:hover {
    border-bottom: 1px solid gray;
    width: fit-content;
 }
 .topHeader-rhs > li:first-child:hover .contactDrop {
-   transition: all 0.5s;
    display: block;
 }
 
@@ -150,15 +152,80 @@ li > a {
    position: absolute;
    background: #1d2532;
    color: #fff;
-   width: 300px;
+   width: 240px;
    padding: 5px 10px;
-   top: 50px;
+   top: 40px;
    right: 0px;
-   left: -250px;
+   left: -200px;
    line-height: 2;
    display: none;
+}
+.userDrop > a {
+   font-size: 0.9em;
+   color: white;
+   text-decoration: none;
+}
+
+.userDrop > a:hover {
+   border-bottom: 1px solid white;
 }
 .topHeader-rhs > li:nth-child(5):hover .userDrop {
    transition: all 0.5s;
    display: block;
+}
+.searchDrop {
+   position: absolute;
+   background: #feffff;
+   width: 100vw;
+   height: 400px;
+   padding: 5px 10px;
+   top: 40px;
+   right: -10px;
+   display: none;
+   border-bottom: 1px solid #1d2532;
+   z-index: 9999;
+   cursor: auto;
+   transition: all ease-in-out 1s;
+}
+.topHeader-rhs > li:nth-child(6):hover .searchDrop {
+   transition: all 0.5s;
+   display: block;
+   transition: all ease-in-out 1s;
+}
+#advanceSearch {
+   display: block;
+   border: 1px solid #1d2532;
+   width: 70%;
+   height: 50px;
+   margin: auto;
+   margin-top: 40px;
+   font-size: 25px;
+   text-align: center;
+   color: rgb(81, 81, 81);
+   border-radius: 5px;
+}
+.searchDrop > .searchSuggestions {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-wrap: wrap;
+   gap: 15px;
+   width: 70%;
+   margin: auto;
+   margin-top: 30px;
+   line-height: 0.8;
+   transition: all linear 0.5s;
+}
+.searchDrop > .searchSuggestions > a {
+   color: rgb(89, 89, 89);
+   text-decoration: none;
+   font-size: 0.8em;
+}
+.searchDrop > .searchSuggestions > a:hover {
+   color: black;
+   font-weight: 600;
+}
+
+.bottomHeader {
+   /* border: 1px solid yellow; */
 }
