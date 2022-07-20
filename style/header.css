@@ -1,0 +1,137 @@
+@font-face {
+   font-family: "Zoho_Puvi_Regular";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.otf) format("opentype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_RegularItalic";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.otf) format("opentype");
+   font-weight: 400;
+   font-style: oblique;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_Medium";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_medium.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_medium.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_medium.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_medium.otf) format("opentype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_SemiBold";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.otf) format("opentype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_SemiBoldItalic";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.otf) format("opentype");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_Bold";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.otf) format("opentype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Roboto Condensed";
+   font-weight: 400;
+   font-style: normal;
+   src: url(https://webfonts.zohostatic.com/robotocondensedregular/font.eot);
+   src: url(https://webfonts.zohostatic.com/robotocondensedregular/font.eot?#iefix) format("eot"),
+      url(https://webfonts.zohostatic.com/robotocondensedregular/font.woff2) format("woff2"),
+      url(https://webfonts.zohostatic.com/robotocondensedregular/font.woff) format("woff"),
+      url(https://webfonts.zohostatic.com/robotocondensedregular/font.ttf) format("truetype"),
+      url(https://webfonts.zohostatic.com/robotocondensedregular/font.svg#RobotoCondensed-Regular) format("svg");
+}
+
+* {
+   margin: 0px;
+   border: 0px;
+   box-sizing: border-box;
+   font-family: "Zoho_Puvi_Regular";
+}
+
+.mainHeader {
+   display: block;
+   border: 1px solid red;
+}
+.topHeader {
+   display: flex;
+   justify-content: flex-end;
+   height: 50px;
+}
+
+.topHeader > .topHeader-rhs {
+   width: 25%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   list-style-type: none;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.725);
+}
+.topHeader > .topHeader-rhs > li {
+   cursor: pointer;
+   position: relative;
+}
+.bottomHeader {
+   border: 1px solid yellow;
+}
+
+.contactDrop {
+   position: absolute;
+   background: #1d2532;
+   color: #fff;
+   width: 250px;
+   padding: 5px 10px;
+   top: 30px;
+   right: 0;
+   left: 0;
+   line-height: 2;
+   display: none;
+}
+.contactDrop > a {
+   color: #ccc;
+   padding: 2px 0;
+   display: block;
+   line-height: 20px;
+   text-decoration: none;
+}
+.topHeader-rhs > li:first-child:hover .contactDrop {
+   display: block;
+}
+
+.active {
+   display: inline-block;
+}
