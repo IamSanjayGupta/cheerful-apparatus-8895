@@ -1,0 +1,232 @@
+@font-face {
+   font-family: "Zoho_Puvi_Regular";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.otf) format("opentype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_RegularItalic";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.otf) format("opentype");
+   font-weight: 400;
+   font-style: oblique;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_Medium";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_medium.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_medium.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_medium.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_medium.otf) format("opentype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_SemiBold";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.otf) format("opentype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_SemiBoldItalic";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_semibold.otf) format("opentype");
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Zoho_Puvi_Bold";
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.eot);
+   src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.eot) format("embedded-opentype"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.woff2) format("woff2"),
+      url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.otf) format("opentype");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Roboto Condensed";
+   font-weight: 400;
+   font-style: normal;
+   src: url(https://webfonts.zohostatic.com/robotocondensedregular/font.eot);
+   src: url(https://webfonts.zohostatic.com/robotocondensedregular/font.eot?#iefix) format("eot"),
+      url(https://webfonts.zohostatic.com/robotocondensedregular/font.woff2) format("woff2"),
+      url(https://webfonts.zohostatic.com/robotocondensedregular/font.woff) format("woff"),
+      url(https://webfonts.zohostatic.com/robotocondensedregular/font.ttf) format("truetype"),
+      url(https://webfonts.zohostatic.com/robotocondensedregular/font.svg#RobotoCondensed-Regular) format("svg");
+}
+
+* {
+   margin: 0px;
+   border: 0px;
+   box-sizing: border-box;
+   font-family: "Zoho_Puvi_Regular";
+}
+
+li > a {
+   color: gray;
+}
+.mainHeader {
+   display: block;
+   /* border: 1px solid red; */
+}
+.topHeader {
+   display: flex;
+   justify-content: flex-end;
+   height: 40px;
+   color: gray;
+}
+
+.topHeader > .topHeader-rhs {
+   width: 27%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   list-style-type: none;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.725);
+}
+.topHeader > .topHeader-rhs > li {
+   text-decoration: none;
+   cursor: pointer;
+   position: relative;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   padding: 0px 5px;
+}
+.topHeader > .topHeader-rhs > li > a {
+   text-decoration: none;
+}
+
+.contactDrop {
+   position: absolute;
+   background: #1d2532;
+   color: #fff;
+   width: 200px;
+   padding: 5px 10px;
+   top: 39px;
+   right: 10;
+   left: -4px;
+   line-height: 2;
+   font-size: 0.9em;
+   display: none;
+}
+.contactDrop > a {
+   font-size: 0.9em;
+   color: #ccc;
+   padding: 2px;
+   display: block;
+   line-height: 1.1;
+   transition: all 0.4s;
+   text-decoration: none;
+}
+.contactDrop > a:hover {
+   border-bottom: 1px solid gray;
+   width: fit-content;
+}
+.topHeader-rhs > li:first-child:hover .contactDrop {
+   display: block;
+}
+
+.userDrop {
+   position: absolute;
+   background: #1d2532;
+   color: #fff;
+   width: 240px;
+   padding: 5px 10px;
+   top: 39px;
+   right: 0px;
+   left: -200px;
+   line-height: 2;
+   display: none;
+}
+.userDrop > a {
+   font-size: 0.9em;
+   color: white;
+   text-decoration: none;
+}
+
+.userDrop > a:hover {
+   border-bottom: 1px solid white;
+}
+.topHeader-rhs > li:nth-child(5):hover .userDrop {
+   transition: all 0.5s;
+   display: block;
+}
+.searchDrop {
+   position: absolute;
+   background: #feffff;
+   width: 100vw;
+   height: 400px;
+   padding: 5px 10px;
+   top: 39px;
+   right: -10px;
+   display: none;
+   border-bottom: 1px solid #1d2532;
+   z-index: 9999;
+   cursor: auto;
+   transition: all ease-in-out 1s;
+}
+.topHeader-rhs > li:nth-child(6):hover .searchDrop {
+   transition: all 0.5s;
+   display: block;
+   transition: all ease-in-out 1s;
+}
+#advanceSearch {
+   display: block;
+   border: 1px solid #1d2532;
+   width: 70%;
+   height: 50px;
+   margin: auto;
+   margin-top: 40px;
+   font-size: 25px;
+   font-weight: 600;
+   text-align: center;
+   color: rgb(81, 81, 81);
+   border-radius: 5px;
+}
+.searchDrop > .searchSuggestions {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-wrap: wrap;
+   gap: 15px;
+   width: 70%;
+   margin: auto;
+   margin-top: 30px;
+   line-height: 0.8;
+   transition: all linear 0.5s;
+}
+.searchDrop > .searchSuggestions > a {
+   color: rgb(89, 89, 89);
+   text-decoration: none;
+   font-size: 0.8em;
+}
+.searchDrop > .searchSuggestions > a:hover {
+   color: black;
+   font-weight: 600;
+}
+
+.bottomHeader {
+   /* border: 1px solid yellow; */
+}
