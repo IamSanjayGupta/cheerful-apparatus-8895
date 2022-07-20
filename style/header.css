@@ -82,10 +82,16 @@
    box-sizing: border-box;
    font-family: "Zoho_Puvi_Regular";
 }
-
+a {
+   text-decoration: none;
+   color: white;
+}
+li > a {
+   color: #1d2532;
+}
 .mainHeader {
    display: block;
-   border: 1px solid red;
+   /* border: 1px solid red; */
 }
 .topHeader {
    display: flex;
@@ -104,9 +110,12 @@
 .topHeader > .topHeader-rhs > li {
    cursor: pointer;
    position: relative;
+   height: 100%;
+   display: flex;
+   align-items: center;
 }
 .bottomHeader {
-   border: 1px solid yellow;
+   /* border: 1px solid yellow; */
 }
 
 .contactDrop {
@@ -115,23 +124,41 @@
    color: #fff;
    width: 250px;
    padding: 5px 10px;
-   top: 30px;
-   right: 0;
+   top: 50px;
+   right: 10;
    left: 0;
    line-height: 2;
    display: none;
 }
 .contactDrop > a {
    color: #ccc;
-   padding: 2px 0;
+   padding: 2px;
    display: block;
-   line-height: 20px;
-   text-decoration: none;
+   line-height: 25px;
+   transition: all 0.3s;
+}
+.contactDrop > a:hover {
+   border-bottom: 1px solid gray;
+   width: fit-content;
 }
 .topHeader-rhs > li:first-child:hover .contactDrop {
+   transition: all 0.5s;
    display: block;
 }
 
-.active {
-   display: inline-block;
+.userDrop {
+   position: absolute;
+   background: #1d2532;
+   color: #fff;
+   width: 300px;
+   padding: 5px 10px;
+   top: 50px;
+   right: 0px;
+   left: -250px;
+   line-height: 2;
+   display: none;
+}
+.topHeader-rhs > li:nth-child(5):hover .userDrop {
+   transition: all 0.5s;
+   display: block;
 }
