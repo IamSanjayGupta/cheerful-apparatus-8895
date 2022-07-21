@@ -236,7 +236,11 @@ li > a {
    align-items: center;
    background-color: white;
    border-bottom: 1px solid gray;
-   /* border: 1px solid red; */
+}
+.bottomHeaderSticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
 }
 .companyLogo {
    width: 25%;
@@ -254,20 +258,82 @@ li > a {
    margin-left: 8px;
 }
 
-.mainNav {
-   width: 55%;
-   /* border: 1px solid red; */
+.navMenu {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.downloadBtn {
-   width: 20%;
-   /* border: 1px solid red; */
+.navMenu > li {
+   list-style: none;
+   display: block;
+   width: 15%;
+   height: 100%;
+   color: rgba(79, 79, 79, 0.911);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   cursor: pointer;
 }
-.bottomHeaderSticky {
-   position: fixed;
-   top: 0;
-   width: 100%;
+.navMenu > li:hover {
+   color: rgb(7, 7, 7);
+}
+.navMenu > li:hover::after {
+   content: "";
+   position: absolute;
+   top: 38px;
+   border-left: 12px solid transparent;
+   border-right: 12px solid transparent;
+   border-bottom: 12px solid rgba(55, 55, 55, 0.733);
+   z-index: 99999;
+   opacity: 0;
+   animation: 0.5s opec forwards;
+}
+@keyframes opec {
+   form {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+.navMenu > #ProductMenu:hover::after {
 }
 
+.navMenu > #SolutionMenu:hover::after {
+}
+
+.navMenu > #CompanyMenu:hover::after {
+}
+
+.navMenu > #SupportMenu:hover::after {
+}
+.navMenu > #EventMenu:hover::after {
+}
+
+.downloadBtn {
+   width: 15%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+#FreeDownloadBtn {
+   background: #fff;
+   border: 1px solid #dd002c;
+   padding: 10px 15px;
+   border-radius: 4px;
+   color: #dd002c;
+   font-family: Zoho_Puvi_SemiBold;
+   font-size: 13px;
+   transition: all ease-in-out 0.4s;
+}
+
+#FreeDownloadBtn:hover {
+   color: #fff;
+   background-color: #dd002c;
+}
 /* 
 
 
