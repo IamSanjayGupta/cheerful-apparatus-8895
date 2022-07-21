@@ -308,20 +308,20 @@ li > a {
 .productOptions {
    position: absolute;
    top: 90%;
-   width: 70vw;
+   width: 80vw;
    margin: auto;
    height: 500px;
    display: none;
-   border: 1px solid red;
+   border: 1px solid #555;
 }
 
 .productOptions > .tab-nav {
-   width: 35%;
+   width: 30%;
    background-color: black;
    padding: 10px 0px;
 }
 .productOptions > .tab-stages {
-   width: 65%;
+   width: 70%;
 }
 
 .tab-nav > li {
@@ -332,6 +332,7 @@ li > a {
    justify-content: center;
    align-items: center;
    cursor: pointer;
+   position: relative;
    border-bottom: 1px solid #555;
 }
 .productOptions > .tab-nav > li:hover {
@@ -340,7 +341,7 @@ li > a {
 .productOptions > .tab-nav > li > .tabIcon {
    width: 15%;
    height: 100%;
-   font-size: 30px;
+   font-size: 20px;
    display: flex;
    justify-content: flex-end;
    align-items: center;
@@ -375,11 +376,6 @@ li > a {
 }
 .active {
    display: flex;
-}
-
-.navMenu > #ProductMenu:hover ~ #productOptions {
-   display: flex;
-   background-color: red;
 }
 
 .navMenu > #SolutionMenu:hover::after {
