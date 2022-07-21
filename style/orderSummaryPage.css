@@ -348,6 +348,10 @@
     width: 85%;
     margin-top: 20px;
 }
+#productDescription1:hover{
+    cursor: pointer;
+    background-color: #f5f0f0;
+}
 #divo{
   
     width: 40%;
@@ -379,4 +383,73 @@
     width: 90%;
    border: 1px solid rgb(205, 239, 160); 
    margin-top: 40px;
+}
+#bottompart{
+    
+    margin-top: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#subbottompart1{
+    
+    height: 300px;
+    width: 42%;
+
+}
+#subbottompart2{
+    border: 1px solid blueviolet;
+    height: 300px;
+    width: 42%;
+
+}
+#coupon{
+   
+    height: 40%;
+    background-color:rgb(237,237,237);
+    border-radius: 10px;
+    width: 85%;
+}
+#pc{
+  color: blue;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 10px;
+}
+#coupon-code{
+    width: 90%;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 18px;
+    margin-top: 15px;
+}
+#couponbtn{
+    background-color: #FCB923;
+    width: 8%;
+    height: 29px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    border:2px solid white;
+    position: absolute;
+    top: 590px;
+    left:810px ;
+}
+#couponbtn:hover{
+    cursor: pointer;
+}
+#gpq{
+    background-color: #FF7B0D;
+    width: 85%;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    margin-top: 60px;
+    border: none;
+    border-radius: 20px;
+}
+#gpq:hover{
+    cursor: pointer;
 }
