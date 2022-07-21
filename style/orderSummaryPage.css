@@ -1,0 +1,382 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#ospNav{
+    background-color: #142357;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#subosp1{
+   
+    width: 20%;
+    margin-left: 100px;
+    display: flex;
+    gap: 20px;
+}
+#subosp2{
+   
+    width: 28%;
+    
+    display: flex;
+    gap: 20px;
+}
+#subosp1>h2{
+    font-size: 35px;
+    margin: 10px 0px;
+}
+#subosp1>p{
+    margin-top: 25px;
+}
+#subosp2>button{
+    color: white;
+    background-color: rgb(223,77,57);
+    font-size: 18px;
+    margin: 3px 0px ;
+    padding: 0px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 100px;
+}
+#subosp2>div{
+    display: flex;
+    gap: 5px;
+}
+#subosp2>div>img{
+    width: 20px;
+    height: 20px;
+    margin-top:20px ;
+}
+#subosp2>div>h2{
+    color: #E9A40E;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-right: 20x;
+}
+#divOuter{
+    border: 1px solid red;
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+}
+#leftDiv{
+    border: 1px solid blue;
+    height: 400px;
+    width: 25%;
+}
+#rightDiv{
+    border: 1px solid blue;
+   
+    width: 75%;
+}
+#head1{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+    
+}
+#head1:hover{
+    cursor: pointer;
+
+}
+#subhead1{
+    display: block;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;
+   
+   
+   
+}
+#subhead1>p{
+    padding-left: 50px;
+}
+#subhead1>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head2{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
+ 
+}
+#head2:hover{
+    cursor: pointer;
+
+}
+#subhead2{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;
+   }
+ 
+#subhead2>p{
+    padding-left: 50px;
+}
+#subhead2>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head3{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
+    
+}
+#head3:hover{
+    cursor: pointer;
+
+}
+#subhead3{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead3>p{
+    padding-left: 50px;
+}
+#subhead3>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head4{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
+    
+}
+#head4:hover{
+    cursor: pointer;
+
+}
+#subhead4{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead4>p{
+    padding-left: 50px;
+}
+#subhead4>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head5{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
+    
+}
+#head5:hover{
+    cursor: pointer;
+
+}
+#subhead5{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead5>p{
+    padding-left: 50px;
+}
+#subhead5>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head6{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
+    
+}
+#head6:hover{
+    cursor: pointer;
+
+}
+#subhead6{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead6>p{
+    padding-left: 50px;
+}
+#subhead6>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head7{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
+    
+}
+#head7:hover{
+    cursor: pointer;
+
+}
+#subhead7{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead7>p{
+    padding-left: 50px;
+}
+#subhead7>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head8{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
+    
+}
+#head8:hover{
+    cursor: pointer;
+
+}
+#subhead8{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead8>p{
+    padding-left: 50px;
+}
+#subhead8>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+#underline{
+    border: 1px solid #EBEAEA;
+    height: 3px;
+    margin-top: 40px;
+}
+#ordersumhead{
+    font-size: 38px;
+    margin-top: 20px;
+}
+#sumbill{
+ 
+    height: 45px;
+    display: flex;
+    background-color: #C4C4C4;
+    margin-top: 25px;
+    color: white;
+    border-radius: 20px;
+    width: 85%;
+    justify-content: space-between;
+}
+#sumbill>div{
+    background-color: #7BBB29;
+    width: 35%;
+    border-radius: 20px;
+    border-right: 3px solid white;
+}
+#sumbill>div>p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#sumbill>p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-right: 90px; 
+}
+#productDetails{
+ 
+    height: 30px;
+    width: 85%;
+    margin-top: 30px;
+    color:#5273AC;
+    display: flex;
+    
+    font-weight: bold;
+    font-size: 18px;
+}
+#productDetails>p:first-child{
+    margin-left: 40px;
+}
+#productDetails>p:nth-child(2){
+    margin-left: 55px;
+}
+#productDetails>p:nth-child(3){
+    margin-left: 190px;
+}
+#productDetails>p:nth-child(4){
+    margin-left: 60px;
+}
+#productDetails>p:nth-child(5){
+    margin-left: 60px;
+}
+#hrp{
+    width: 90%;
+   
+}
+
+#productDescription1{
+    
+    
+    display: flex;
+    
+    width: 85%;
+    margin-top: 20px;
+}
+#divo{
+  
+    width: 40%;
+    line-height: 20px;
+    word-spacing: 4px;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left:50px ;
+   
+}
+#priceo{
+    border: 1px solid #7F9DB9;
+    height: 25px;
+    width: 40px;
+    margin-left: 90px;
+    
+}
+#productDescription1>p:nth-child(1){
+    margin-left: 40px;
+   
+}
+#uppp{
+  margin-left: 29px;
+}
+#ppp{
+    margin-left: 80px;
+}
+#hhrr{
+    width: 90%;
+   border: 1px solid rgb(205, 239, 160); 
+   margin-top: 40px;
+}
