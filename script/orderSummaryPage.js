@@ -119,5 +119,20 @@
     }
 }
 function partnerssfun(){
-    alert ("This page is under development...")
+    alert ("This section is under development...")
+}
+function gpqfun(){
+    alert ("This section is under development...")
+}
+function couponfun(){
+    let value=document.getElementById("coupon-code").value
+    let subprice=document.getElementById("subpricechan")
+    let grandprice=document.getElementById("grandpricechan")
+    if(value=="masai30"){
+       subprice.innerText="241.5"
+       grandprice.innerText="241.5"
+    }else{
+        subprice.innerText="345.00"
+       grandprice.innerText="345.00"
+    }
 }
