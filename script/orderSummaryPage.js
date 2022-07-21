@@ -134,5 +134,6 @@ function couponfun(){
     }else{
         subprice.innerText="345.00"
        grandprice.innerText="345.00"
+       alert("Enter a valid Coupon Code...")
     }
 }

@@ -173,5 +173,7 @@ function getinput7() {
     span.innerText = price
 }
 
-
+function h2pfun(){
+    alert("This Section is under development...")
+}
 
