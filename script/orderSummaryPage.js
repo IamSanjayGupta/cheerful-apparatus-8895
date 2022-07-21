@@ -118,12 +118,7 @@
 
     }
 }
-function partnerssfun(){
-    alert ("This section is under development...")
-}
-function gpqfun(){
-    alert ("This section is under development...")
-}
+
 function couponfun(){
     let value=document.getElementById("coupon-code").value
     let subprice=document.getElementById("subpricechan")

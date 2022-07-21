@@ -173,7 +173,24 @@ function getinput7() {
     span.innerText = price
 }
 
-function h2pfun(){
-    alert("This Section is under development...")
+function checkfun(){
+    let check=document.getElementById("check").checked
+    if(check==true){
+        document.getElementById("pricetotal").innerText="345.00"
+    }
+    
+    else{
+        document.getElementById("pricetotal").innerText="0"
+    }
 }
-
+function getedition(){
+    let edition=document.getElementById("edisel").value
+    if(edition=="Student"){
+        document.getElementById("pricetotal").innerText="245.00"
+    }else if(edition=="Professional"){
+        document.getElementById("pricetotal").innerText="345.00"
+    }
+    else{
+        document.getElementById("pricetotal").innerText="0" 
+    }
+}
