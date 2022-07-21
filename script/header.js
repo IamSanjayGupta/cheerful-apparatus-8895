@@ -1,3 +1,7 @@
+import { topHeader } from "../components/headerComponent.js";
+
+//document.querySelector(".mainHeader").innerHTML = topHeader() + topHeader();
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
    fixNavbar();
@@ -13,7 +17,9 @@ var sticky = navbar.offsetTop;
 function fixNavbar() {
    if (window.pageYOffset >= sticky) {
       navbar.classList.add("bottomHeaderSticky");
+      document.querySelector(".companyLogo").classList.add("reduceLogosize");
    } else {
       navbar.classList.remove("bottomHeaderSticky");
+      document.querySelector(".companyLogo").classList.remove("reduceLogosize");
    }
 }
