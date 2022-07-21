@@ -57,6 +57,9 @@
             margin: 0px;
             padding-top: 15px;
         }
+        #h2p:hover{
+            cursor: pointer;
+        }
 
         #innerDiv1>div {
 
@@ -356,7 +359,7 @@
     justify-content: space-between;
     margin-left: 35px;
 }
-.img2{
+.img02{
     width: 25%;
 }
 #forcheck>div>p{
@@ -366,7 +369,7 @@
     margin-left: 10px;
 }
 #cartbtnb{
-    width: 20%;
+    width: 25%;
     background-color: rgb(116,185,0);
     font-size: 18px;
     color: white;
@@ -410,69 +413,207 @@
     margin-top: 15px;
    
 }
-
-.dropbtn{
-
-
-
-    color: black;
+#head1{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
     
-    width: 250px;
-    
-    padding: 18px;
-    
-    border: 0;
-    
+}
+#head1:hover{
+    cursor: pointer;
+
+}
+#subhead1{
+    display: block;
+    color: #777777;
     font-size: 17px;
-    
-    
-    }
-    .dropdown {
-    
-    position: relative;
-    
-    display: inline-block;
-    
-    width: 250px;
-    
-    
-    }
-    .dropdown-content {
-    
+    font-weight: 300;
+   
+   
+   
+}
+#subhead1>p{
+    padding-left: 50px;
+}
+#subhead1>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head2{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
+ 
+}
+#head2:hover{
+    cursor: pointer;
+
+}
+#subhead2{
     display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;
+   }
+ 
+#subhead2>p{
+    padding-left: 50px;
+}
+#subhead2>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head3{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
     
-    background-color: whitesmoke;
+}
+#head3:hover{
+    cursor: pointer;
+
+}
+#subhead3{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead3>p{
+    padding-left: 50px;
+}
+#subhead3>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head4{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
     
-    width: 100%;
+}
+#head4:hover{
+    cursor: pointer;
+
+}
+#subhead4{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead4>p{
+    padding-left: 50px;
+}
+#subhead4>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head5{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
     
-    }
-    .dropdown-content li {
+}
+#head5:hover{
+    cursor: pointer;
+
+}
+#subhead5{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead5>p{
+    padding-left: 50px;
+}
+#subhead5>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head6{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
     
-    display: block;
+}
+#head6:hover{
+    cursor: pointer;
+
+}
+#subhead6{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead6>p{
+    padding-left: 50px;
+}
+#subhead6>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head7{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
     
-    color: black;
+}
+#head7:hover{
+    cursor: pointer;
+
+}
+#subhead7{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead7>p{
+    padding-left: 50px;
+}
+#subhead7>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#head8{
+    color: #777777;
+    font-size: 20px;
+    font-weight: 300;
+   
     
-    padding: 12px;
+}
+#head8:hover{
+    cursor: pointer;
+
+}
+#subhead8{
+    display: none;
+    color: #777777;
+    font-size: 17px;
+    font-weight: 300;  
+}
+#subhead8>p{
+    padding-left: 50px;
+}
+#subhead8>p:hover{
+    color: blue;
+    cursor: pointer;
+}
+.arrowimg{
+    width: 10%;
     
-    text-decoration: none;
-    
-    
-    }
-    .dropdown:hover .dropbtn {
-    
-    background-color: white;
-    
-    }
-    
-    .dropdown-content li:hover {
-    
-    background-color: lightgrey;
-    
-    }
-    
-    .dropdown:hover .dropdown-content {
-    
-    display: block;
-    
-    }
+}
+
+
+
     
