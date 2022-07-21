@@ -2,6 +2,15 @@ import { topHeader } from "../components/headerComponent.js";
 
 //document.querySelector(".mainHeader").innerHTML = topHeader() + topHeader();
 
+document.querySelector("#ProductMenu").addEventListener("mouseenter", () => {
+   document.querySelector(".productOptions").classList.add("active");
+});
+
+document.querySelector(".productOptions").addEventListener("mouseleave", () => {
+   document.querySelector(".productOptions").classList.remove("active");
+   console.log("");
+});
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
    fixNavbar();

@@ -201,6 +201,7 @@ li > a {
    height: 50px;
    margin: auto;
    margin-top: 40px;
+   padding: 0px 15px;
    font-size: 25px;
    font-weight: 600;
    text-align: center;
@@ -235,6 +236,7 @@ li > a {
    justify-content: space-around;
    align-items: center;
    background-color: white;
+   position: relative;
    border-bottom: 1px solid gray;
 }
 .bottomHeaderSticky {
@@ -267,6 +269,7 @@ li > a {
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
 }
 .navMenu > li {
    list-style: none;
@@ -277,7 +280,6 @@ li > a {
    display: flex;
    justify-content: center;
    align-items: center;
-   position: relative;
    cursor: pointer;
 }
 .navMenu > li:hover {
@@ -289,7 +291,7 @@ li > a {
    top: 38px;
    border-left: 12px solid transparent;
    border-right: 12px solid transparent;
-   border-bottom: 12px solid rgba(55, 55, 55, 0.733);
+   border-bottom: 12px solid black;
    z-index: 99999;
    opacity: 0;
    animation: 0.5s opec forwards;
@@ -302,7 +304,82 @@ li > a {
       opacity: 1;
    }
 }
-.navMenu > #ProductMenu:hover::after {
+
+.productOptions {
+   position: absolute;
+   top: 90%;
+   width: 70vw;
+   margin: auto;
+   height: 500px;
+   display: none;
+   border: 1px solid red;
+}
+
+.productOptions > .tab-nav {
+   width: 35%;
+   background-color: black;
+   padding: 10px 0px;
+}
+.productOptions > .tab-stages {
+   width: 65%;
+}
+
+.tab-nav > li {
+   list-style: none;
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   border-bottom: 1px solid #555;
+}
+.productOptions > .tab-nav > li:hover {
+   background-color: rgba(123, 123, 123, 0.413);
+}
+.productOptions > .tab-nav > li > .tabIcon {
+   width: 15%;
+   height: 100%;
+   font-size: 30px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   color: #3197d7;
+   padding-right: 10px;
+}
+
+.productOptions > .tab-nav > li > .tabContent {
+   width: 85%;
+   height: 100%;
+   font-size: 30px;
+   font-size: 12px;
+   padding: 5px 10px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.productOptions > .tab-nav > li > .tabContent .subTitle {
+   font-size: 0.7em;
+   opacity: 0.9;
+}
+.productOptions > .tab-nav > li::after {
+   content: ">";
+   display: inline-block;
+   position: absolute;
+   right: 5px;
+   color: #fff;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.active {
+   display: flex;
+}
+
+.navMenu > #ProductMenu:hover ~ #productOptions {
+   display: flex;
+   background-color: red;
 }
 
 .navMenu > #SolutionMenu:hover::after {
@@ -337,25 +414,6 @@ li > a {
    color: #fff;
    background-color: #dd002c;
 }
-/* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- */
 
 .HomePage {
    height: 1500px;
