@@ -8,11 +8,11 @@
 
         count++
 
-        if (count % 2 == 1) {
+        if (count % 2 == 0) {
             sub.style.display = "none"
         } else {
             sub.style.display = "block"
-            sub.style.transition = " all 0.5s";
+            
 
         }
 
@@ -117,4 +117,7 @@
         }
 
     }
+}
+function partnerssfun(){
+    alert ("This page is under development...")
 }

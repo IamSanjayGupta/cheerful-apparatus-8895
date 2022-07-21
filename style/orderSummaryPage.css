@@ -55,8 +55,14 @@
     margin-top: 15px;
     margin-right: 20x;
 }
+#partnerss:hover{
+    cursor: pointer;
+}
+#csbtn:hover{
+    cursor: pointer;
+}
 #divOuter{
-    border: 1px solid red;
+  
     width: 70%;
     height: 500px;
     margin: auto;
@@ -64,18 +70,20 @@
     gap: 50px;
 }
 #leftDiv{
-    border: 1px solid blue;
-    height: 400px;
+ 
+    border-right: 1px solid rgb(231, 226, 226);
+    height: 800px;
     width: 25%;
+    margin-top: 35px;
 }
 #rightDiv{
-    border: 1px solid blue;
+   
    
     width: 75%;
 }
 #head1{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     margin-top: 30px;
     
@@ -85,13 +93,11 @@
 
 }
 #subhead1{
-    display: block;
+    display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;
-   
-   
-   
+    margin: 10px 0px;
 }
 #subhead1>p{
     padding-left: 50px;
@@ -102,7 +108,7 @@
 }
 #head2{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
    
  
@@ -114,7 +120,7 @@
 #subhead2{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;
    }
  
@@ -127,7 +133,7 @@
 }
 #head3{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
    
     
@@ -139,7 +145,7 @@
 #subhead3{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead3>p{
@@ -151,7 +157,7 @@
 }
 #head4{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
    
     
@@ -163,7 +169,7 @@
 #subhead4{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead4>p{
@@ -175,7 +181,7 @@
 }
 #head5{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
    
     
@@ -187,7 +193,7 @@
 #subhead5{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead5>p{
@@ -199,7 +205,7 @@
 }
 #head6{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
    
     
@@ -211,7 +217,7 @@
 #subhead6{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead6>p{
@@ -223,7 +229,7 @@
 }
 #head7{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
    
     
@@ -235,7 +241,7 @@
 #subhead7{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead7>p{
@@ -247,7 +253,7 @@
 }
 #head8{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
    
     
@@ -259,7 +265,7 @@
 #subhead8{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead8>p{
@@ -399,7 +405,7 @@
 
 }
 #subbottompart2{
-    border: 1px solid blueviolet;
+    
     height: 300px;
     width: 42%;
 
@@ -451,5 +457,51 @@
     border-radius: 20px;
 }
 #gpq:hover{
+    cursor: pointer;
+}
+#subprice{
+    
+    height: 50px;
+    display: flex;
+    
+    font-size: 18px;
+}
+#subprice>h3:first-child{
+    font-style: italic;
+    color: grey;
+    margin-top: 10px;
+}
+#subprice>h3:last-child{
+    margin-left: 90px;
+    margin-top: 10px;
+}
+#subprice1{
+    
+    height: 50px;
+    display: flex;
+    
+    font-size: 18px;
+}
+#subprice1>h3:first-child{
+    
+    color: rgb(42, 40, 40);
+    margin-top: 10px;
+    
+}
+#subprice1>h3:last-child{
+    margin-left: 55px;
+    margin-top: 10px;
+}
+#contiunecheckout{
+    background-color: #7BBB29;
+    width: 85%;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    margin-top: 80px;
+    border: none;
+    border-radius: 20px;
+}
+#contiunecheckout:hover{
     cursor: pointer;
 }
