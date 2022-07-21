@@ -16,10 +16,10 @@
     </div>
     <div id="event_navigation">
         <ul>
-            <li id="activeclasses" data-value="#p1" data-hrefurl="upcomingevents"> 
+            <li id="activeclasses" onclick="activeclassesfun()" data-value="#p1" data-hrefurl="upcomingevents"> 
                 Upcoming Events
             </li>
-            <li data-value="#p2" data-hrefurl="pasteevent"id>Paste Events</li>
+            <li data-value="#p2"  data-hrefurl="pasteevent" id="pasteevent" onclick="pasteeventfun()"> Paste Events</li>
             </li>
         </ul>
     </div>
@@ -35,6 +35,18 @@
             <option value="Seminars">Seminars</option>
             <option value="User conferences">User conferences</option>
             <option value="Industry events">Industry events</option>
+        </select>
+        <select id="Selectbydate">
+            <option value="Select by Year"> Select by year</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
         </select>
         <select id="Selectbytypes">
             <option value="All region"> All region</option>
@@ -61,12 +73,13 @@
             July 19-20,2022 
 
         </p>
+       <hr id="underline">
         <h2>
             US
         </h2>
-        <div id="resister">
-            <p>
-                Resister now
+        <div id="resister"  >
+            <p  >
+               <a >  Resister now</a>  
             </p>
         </div>
     </div>
@@ -80,12 +93,14 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
+        
         <div id="resister">
             <p>
-                Resister now
+                <a >  Resister now</a>  
             </p>
         </div>
     </div>
@@ -98,9 +113,11 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
+        
         <div id="resister">
             <p>
                 Resister now
@@ -117,9 +134,11 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
+      
         <div id="resister">
             <p>
                 Resister now
@@ -135,9 +154,11 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
+        
         <div id="resister">
             <p>
                 Resister now
@@ -153,9 +174,11 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
+       
         <div id="resister">
             <p>
                 Resister now
@@ -171,9 +194,11 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
+        
         <div id="resister">
             <p>
                 Resister now
@@ -189,6 +214,26 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
+        <h2>
+            US
+        
+        <div id="resister">
+            <p>
+                Resister now
+            </p>
+        </div>
+    </div>
+    <div id="flex">
+        <img src="https://www.manageengine.com/images/me-logo-userconf.svg" alt="">
+        <h2>
+            CSO's Future of cso-infoSec Summit
+        </h2>
+        <p>
+            July 19-20,2022
+
+        </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -207,24 +252,7 @@
             July 19-20,2022
 
         </p>
-        <h2>
-            US
-        </h2>
-        <div id="resister">
-            <p>
-                Resister now
-            </p>
-        </div>
-    </div>
-    <div id="flex">
-        <img src="https://www.manageengine.com/images/me-logo-userconf.svg" alt="">
-        <h2>
-            CSO's Future of cso-infoSec Summit
-        </h2>
-        <p>
-            July 19-20,2022
-
-        </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -243,6 +271,7 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -261,6 +290,7 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -279,6 +309,7 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -297,6 +328,7 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -315,6 +347,7 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -333,6 +366,7 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -351,6 +385,7 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -369,6 +404,7 @@
             July 19-20,2022
 
         </p>
+        <hr id="underline">
         <h2>
             US
         </h2>
@@ -634,3 +670,4 @@
 
 </body>
 </html>
+<script src="./script/events.js"></script>
