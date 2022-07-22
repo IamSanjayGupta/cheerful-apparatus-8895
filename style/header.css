@@ -281,39 +281,86 @@ li > a {
    position: relative;
    cursor: pointer;
 }
+.navMenu li {
+   padding: 0px 10px;
+   list-style: none;
+   cursor: pointer;
+}
+
+.navMenu > li:hover {
+   color: rgb(15, 15, 15);
+}
+
 #ProductMenu:hover > ul,
 #CompanyMenu:hover > ul,
 #SupportMenu:hover > ul,
 #EventMenu:hover > ul {
    display: block;
 }
+
 .productOptions {
    position: absolute;
-   top: 98%;
-   left: -400px;
-   /* width: 400px; */
-   height: 500px;
+   background: #333;
+   width: 350px;
+   height: 80vh;
+   padding: 10px 0px 0px 5px;
+   top: 50px;
+   left: -280px;
+   font-size: 0.9em;
+   font-family: Zoho_Puvi_Medium;
    display: none;
+   z-index: 99;
+   cursor: default;
    border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .optionSubOption1 {
-   /* width: 700px; */
    position: absolute;
    left: 100%;
-   top: -10px;
+   top: 0px;
+   width: 50vw;
+   height: 80vh;
+   padding: 10px 0px;
    background-color: white;
    display: none;
    justify-content: space-around;
-   border: 1px solid red;
    border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .optionSubOption1 > div {
    width: 30%;
 }
-.navMenuOptions > ul > li:hover .optionSubOption1 {
+.navMenuOptions > li {
+   list-style: none;
+   width: 100%;
+   height: 50px;
+   cursor: pointer;
+   border-bottom: 1px solid #555;
+   padding: 0px;
+   /* border: 1px solid red; */
+}
+.navMenuOptions > li > a {
+   display: flex;
+   align-items: center;
+   color: white;
+   width: 100%;
+   height: 100%;
+}
+.navMenuOptions > li a::after {
+   content: ">";
+   display: inline-block;
+   position: absolute;
+   right: 10px;
+   color: #fff;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.navMenuOptions > li:hover {
+   background-color: rgba(123, 123, 123, 0.413);
+}
+.navMenuOptions > li:hover .optionSubOption1 {
    display: flex;
 }
 
@@ -372,7 +419,7 @@ li > a {
 .optionSubOption {
    position: absolute;
    top: 0px;
-   left: 100%;
+   left: 99%;
    background-color: white;
    padding: 20px;
    height: 80vh;
@@ -381,7 +428,8 @@ li > a {
    border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.navMenu > li > ul > li ul > li:hover a {
+
+.navMenu .bottombrder ul > li:hover a {
    padding-bottom: 5px;
    color: black;
    border-bottom: 2px solid #e04b3a;
@@ -390,11 +438,14 @@ li > a {
 .navMenu > li > ul > li:hover > ul {
    display: block;
    width: 100%;
-   animation: showSubOption 0.3s ease-in-out both;
+   animation: showSubOption 0.4s ease-in-out both;
 }
 @keyframes showSubOption {
    0% {
       width: 0%;
+   }
+   25% {
+      width: 50%;
    }
    100% {
       width: 100%;
@@ -414,30 +465,8 @@ li > a {
    height: 40px;
    background-color: #e04b3a;
 }
-.navMenu li {
-   padding: 0px 10px;
-   list-style: none;
-   cursor: pointer;
-}
 
-.navMenu > li > ul > li > a::after {
-   content: "";
-   display: block;
-   position: absolute;
-   bottom: -5px;
-   width: 0;
-   height: 3px;
-   background: #e04b3a;
-   transition: width 0.2s;
-}
-.navMenu > li > ul > li:hover > a::after {
-   width: 105%;
-}
-
-.navMenu > li:hover {
-   color: rgb(15, 15, 15);
-}
-
+/* add traingle to botton of nav  */
 .navMenu > li:hover::after {
    content: "";
    position: absolute;
@@ -458,41 +487,21 @@ li > a {
    }
 }
 
-.navMenuOptions > .tab-nav {
-   background-color: #333;
-   padding: 10px 0px;
-   width: 400px;
+/* border bottum radius */
+.bottombrder > li:hover > a::after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 20px;
+   bottom: -5px;
+   width: 100%;
+   height: 3px;
+   background: #e04b3a;
+   transition: width 0.2s;
+   animation: showSubOption 0.4s ease-in-out both;
 }
 
-.navMenuOptions > .tab-nav > li {
-   list-style: none;
-   width: 100%;
-   height: 50px;
-   cursor: pointer;
-   position: relative;
-   border-bottom: 1px solid #555;
-   padding: 0px;
-}
-.navMenuOptions > .tab-nav > li > a {
-   display: flex;
-   align-items: center;
-   color: white;
-   width: 100%;
-   height: 100%;
-}
-.navMenuOptions > .tab-nav > li::after {
-   content: ">";
-   display: inline-block;
-   position: absolute;
-   right: 10px;
-   color: #fff;
-   top: 50%;
-   transform: translateY(-50%);
-}
-.navMenuOptions > .tab-nav > li:hover {
-   background-color: rgba(123, 123, 123, 0.413);
-}
-.navMenuOptions > .tab-nav > li .tabIcon {
+.navMenuOptions > li .tabIcon {
    width: 15%;
    height: 100%;
    font-size: 20px;
@@ -503,7 +512,7 @@ li > a {
    padding-right: 10px;
 }
 
-.navMenuOptions > .tab-nav > li .tabContent {
+.navMenuOptions > li .tabContent {
    width: 85%;
    height: 100%;
    font-size: 30px;
@@ -514,7 +523,7 @@ li > a {
    justify-content: space-around;
 }
 
-.navMenuOptions > .tab-nav > li .tabContent .subTitle {
+.navMenuOptions > li .tabContent .subTitle {
    font-size: 0.7em;
    opacity: 0.9;
 }
@@ -522,11 +531,6 @@ li > a {
 .optionActive {
    display: flex;
 }
-
-/* .tag-nav-active .tabContent {
-   color: black;
-   font-weight: 600;
-} */
 
 h2.tab-title {
    padding: 0 10px;
@@ -571,6 +575,7 @@ span.hdng-desc {
    font-size: 0.7em;
 }
 
+/* downlaod btn */
 .downloadBtn {
    width: 15%;
    display: flex;

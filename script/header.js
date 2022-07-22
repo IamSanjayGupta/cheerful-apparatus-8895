@@ -2,13 +2,13 @@ import { topHeader } from "../components/headerComponent.js";
 
 //document.querySelector(".mainHeader").innerHTML = topHeader() + topHeader();
 
-document.querySelector("#ProductMenu").addEventListener("mouseenter", () => {
-   document.querySelector(".productOptions").classList.add("optionActive");
-});
+// document.querySelector("#ProductMenu").addEventListener("mouseenter", () => {
+//    document.querySelector(".productOptions").classList.add("optionActive");
+// });
 
-document.querySelector(".productOptions").addEventListener("mouseleave", () => {
-   //document.querySelector(".productOptions").classList.remove("optionActive");
-});
+// document.querySelector(".productOptions").addEventListener("mouseleave", () => {
+//    document.querySelector(".productOptions").classList.remove("optionActive");
+// });
 
 // for (let i = 1; i < 7; i++) {
 //    document.querySelector(`.tab-nav li:nth-child(${i})`).addEventListener("mouseenter", () => {
