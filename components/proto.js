@@ -64,8 +64,8 @@ let subnavbar= ()=>{
         <a href="./features.html">Features</a>
         <a href="./demo.html">Demo</a>
         <a href="./documents.html">Documents</a>
-        <a href="">Get Quote</a>
-        <a href="">Support</a>
+        <a href="./qoute.html">Get Quote</a>
+        <a href="./support.html">Support</a>
         <button>Download
             </button>
         </div>`
