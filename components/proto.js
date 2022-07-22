@@ -60,10 +60,10 @@ let subnavbar= ()=>{
             <h1>AD360</h1>
         </div>
         <div>
-        <a href="">Overview</a>
+        <a href="./product.html">Overview</a>
         <a href="./features.html">Features</a>
-        <a href="">Demo</a>
-        <a href="">Documents</a>
+        <a href="./demo.html">Demo</a>
+        <a href="./documents.html">Documents</a>
         <a href="">Get Quote</a>
         <a href="">Support</a>
         <button>Download
