@@ -1,4 +1,8 @@
-
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
         #outerDiv {
             background-color: #142357;
             color: white;
@@ -415,26 +419,27 @@
 }
 #head1{
     color: #777777;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 300;
     margin-top: 30px;
-    
+    margin: 15px 0px;
 }
 #head1:hover{
     cursor: pointer;
 
 }
 #subhead1{
-    display: block;
+    display: none;
     color: #777777;
-    font-size: 17px;
-    font-weight: 300;
    
+    font-weight: 300;
    
    
 }
 #subhead1>p{
     padding-left: 50px;
+    font-size: 18px;
+    margin:10px 0px;
 }
 #subhead1>p:hover{
     color: blue;
@@ -442,10 +447,10 @@
 }
 #head2{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
    
- 
+    margin: 15px 0px;
 }
 #head2:hover{
     cursor: pointer;
@@ -454,12 +459,15 @@
 #subhead2{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;
+    
    }
  
 #subhead2>p{
     padding-left: 50px;
+    font-size: 18px;
+    margin:10px 0px;
 }
 #subhead2>p:hover{
     color: blue;
@@ -467,9 +475,9 @@
 }
 #head3{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-   
+    margin: 15px 0px;
     
 }
 #head3:hover{
@@ -479,11 +487,13 @@
 #subhead3{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead3>p{
     padding-left: 50px;
+    font-size: 18px;
+    margin:10px 0px;
 }
 #subhead3>p:hover{
     color: blue;
@@ -491,9 +501,9 @@
 }
 #head4{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-   
+    margin: 15px 0px;
     
 }
 #head4:hover{
@@ -503,11 +513,13 @@
 #subhead4{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead4>p{
     padding-left: 50px;
+    font-size: 18px;
+    margin:10px 0px;
 }
 #subhead4>p:hover{
     color: blue;
@@ -515,9 +527,9 @@
 }
 #head5{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-   
+    margin: 15px 0px;
     
 }
 #head5:hover{
@@ -527,7 +539,7 @@
 #subhead5{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead5>p{
@@ -536,12 +548,14 @@
 #subhead5>p:hover{
     color: blue;
     cursor: pointer;
+    font-size: 18px;
+    margin:10px 0px;
 }
 #head6{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-   
+    margin: 15px 0px;
     
 }
 #head6:hover{
@@ -551,11 +565,13 @@
 #subhead6{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead6>p{
     padding-left: 50px;
+    font-size: 18px;
+    margin:10px 0px;
 }
 #subhead6>p:hover{
     color: blue;
@@ -563,9 +579,9 @@
 }
 #head7{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-   
+    margin: 15px 0px;
     
 }
 #head7:hover{
@@ -575,11 +591,13 @@
 #subhead7{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead7>p{
     padding-left: 50px;
+    font-size: 18px;
+    margin:10px 0px;
 }
 #subhead7>p:hover{
     color: blue;
@@ -587,9 +605,9 @@
 }
 #head8{
     color: #777777;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-   
+    margin: 15px 0px;
     
 }
 #head8:hover{
@@ -599,11 +617,13 @@
 #subhead8{
     display: none;
     color: #777777;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;  
 }
 #subhead8>p{
     padding-left: 50px;
+    font-size: 18px;
+    margin:10px 0px;
 }
 #subhead8>p:hover{
     color: blue;

@@ -173,7 +173,30 @@ function getinput7() {
     span.innerText = price
 }
 
-function h2pfun(){
-    alert("This Section is under development...")
+function checkfun(){
+    let check=document.getElementById("check").checked
+    if(check==true){
+        let price121=Math.random()*10000
+        let price221=price121.toFixed(2)
+        document.getElementById("pricetotal").innerText=price221
+    }
+    
+    else{
+        document.getElementById("pricetotal").innerText="0"
+    }
 }
-
+function getedition(){
+    let edition=document.getElementById("edisel").value
+    if(edition=="Student"){
+        let price121=Math.random()*10000
+        let price221=price121.toFixed(2)
+        document.getElementById("pricetotal").innerText=price221
+    }else if(edition=="Professional"){
+        let price121=Math.random()*10000
+        let price221=price121.toFixed(2)
+        document.getElementById("pricetotal").innerText=price221
+    }
+    else{
+        document.getElementById("pricetotal").innerText="0" 
+    }
+}
