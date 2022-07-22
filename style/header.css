@@ -237,7 +237,7 @@ li > a {
    align-items: center;
    background-color: white;
    position: relative;
-   border-bottom: 1px solid gray;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .bottomHeaderSticky {
    position: fixed;
@@ -252,11 +252,9 @@ li > a {
 }
 .companyLogo > img {
    width: 70%;
-   /* height: 45px; */
 }
 .companyLogo > img + img {
    width: 15%;
-   /* height: 30px; */
    margin-left: 8px;
 }
 .reduceLogosize {
@@ -283,11 +281,42 @@ li > a {
    position: relative;
    cursor: pointer;
 }
+#ProductMenu:hover > ul,
 #CompanyMenu:hover > ul,
 #SupportMenu:hover > ul,
 #EventMenu:hover > ul {
    display: block;
 }
+.productOptions {
+   position: absolute;
+   top: 98%;
+   left: -400px;
+   /* width: 400px; */
+   height: 500px;
+   display: none;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.optionSubOption1 {
+   /* width: 700px; */
+   position: absolute;
+   left: 100%;
+   top: -10px;
+   background-color: white;
+   display: none;
+   justify-content: space-around;
+   border: 1px solid red;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.optionSubOption1 > div {
+   width: 30%;
+}
+.navMenuOptions > ul > li:hover .optionSubOption1 {
+   display: flex;
+}
+
 .companyOptions {
    position: absolute;
    background: #333;
@@ -385,8 +414,9 @@ li > a {
    height: 40px;
    background-color: #e04b3a;
 }
-.navMenu > li > ul > li {
+.navMenu li {
    padding: 0px 10px;
+   list-style: none;
    cursor: pointer;
 }
 
@@ -428,34 +458,27 @@ li > a {
    }
 }
 
-.productOptions {
-   position: absolute;
-   top: 98%;
-   left: -300px;
-   width: 90vw;
-   margin: auto;
-   height: 500px;
-   display: none;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
 .navMenuOptions > .tab-nav {
-   width: 30%;
-   background-color: black;
+   background-color: #333;
    padding: 10px 0px;
+   width: 400px;
 }
 
 .navMenuOptions > .tab-nav > li {
    list-style: none;
    width: 100%;
    height: 50px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
    cursor: pointer;
    position: relative;
    border-bottom: 1px solid #555;
+   padding: 0px;
+}
+.navMenuOptions > .tab-nav > li > a {
+   display: flex;
+   align-items: center;
+   color: white;
+   width: 100%;
+   height: 100%;
 }
 .navMenuOptions > .tab-nav > li::after {
    content: ">";
@@ -469,7 +492,7 @@ li > a {
 .navMenuOptions > .tab-nav > li:hover {
    background-color: rgba(123, 123, 123, 0.413);
 }
-.navMenuOptions > .tab-nav > li > .tabIcon {
+.navMenuOptions > .tab-nav > li .tabIcon {
    width: 15%;
    height: 100%;
    font-size: 20px;
@@ -480,48 +503,30 @@ li > a {
    padding-right: 10px;
 }
 
-.navMenuOptions > .tab-nav > li > .tabContent {
+.navMenuOptions > .tab-nav > li .tabContent {
    width: 85%;
    height: 100%;
    font-size: 30px;
    font-size: 12px;
-   padding: 5px 10px;
+   padding: 5px 20px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
 }
 
-.navMenuOptions > .tab-nav > li > .tabContent .subTitle {
+.navMenuOptions > .tab-nav > li .tabContent .subTitle {
    font-size: 0.7em;
    opacity: 0.9;
-}
-
-.navMenuOptions > .tab-stages {
-   width: 70%;
-}
-.navMenuOptions > .tab-stages > div {
-   width: 100%;
-   padding: 10px 5px;
-   display: none;
-   justify-content: center;
-}
-
-.navMenuOptions > .tab-stages > div > div {
-   width: 30%;
 }
 
 .optionActive {
    display: flex;
 }
 
-.tag-nav-active {
-   color: black;
-   background-color: rgb(255, 255, 255);
-}
-.tag-nav-active .tabContent {
+/* .tag-nav-active .tabContent {
    color: black;
    font-weight: 600;
-}
+} */
 
 h2.tab-title {
    padding: 0 10px;
@@ -564,10 +569,6 @@ span.hdng-desc {
 }
 .products-lists > li > a > p {
    font-size: 0.7em;
-}
-ul li {
-   list-style: none;
-   text-decoration: none;
 }
 
 .downloadBtn {

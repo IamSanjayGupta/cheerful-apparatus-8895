@@ -7,17 +7,17 @@ document.querySelector("#ProductMenu").addEventListener("mouseenter", () => {
 });
 
 document.querySelector(".productOptions").addEventListener("mouseleave", () => {
-   document.querySelector(".productOptions").classList.remove("optionActive");
+   //document.querySelector(".productOptions").classList.remove("optionActive");
 });
 
-for (let i = 1; i < 7; i++) {
-   document.querySelector(`.tab-nav li:nth-child(${i})`).addEventListener("mouseenter", () => {
-      document.querySelectorAll(".tab-stages div").forEach((element, ind) => {
-         document.querySelector(`.tab-stages div`).style.display = "none";
-      });
-      document.querySelector(`.tab-stages div:nth-child(${i})`).style.display = "flex";
-   });
-}
+// for (let i = 1; i < 7; i++) {
+//    document.querySelector(`.tab-nav li:nth-child(${i})`).addEventListener("mouseenter", () => {
+//       document.querySelectorAll(".tab-stages div").forEach((element, ind) => {
+//          document.querySelector(`.tab-stages div`).style.display = "none";
+//       });
+//       document.querySelector(`.tab-stages div:nth-child(${i})`).style.display = "flex";
+//    });
+// }
 
 // for (let i = 1; i < 7; i++) {
 //    document.querySelector(`.tab-nav li:nth-child(${i})`).addEventListener("mouseeout", () => {
