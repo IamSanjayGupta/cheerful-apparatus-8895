@@ -283,14 +283,28 @@ li > a {
    position: relative;
    cursor: pointer;
 }
-
-#SupportMenu:hover > ul {
-   display: block;
-}
+#CompanyMenu:hover > ul,
+#SupportMenu:hover > ul,
 #EventMenu:hover > ul {
    display: block;
 }
-
+.companyOptions {
+   position: absolute;
+   background: #333;
+   width: 210px;
+   height: 80vh;
+   padding: 10px 5px;
+   top: 50px;
+   left: 0;
+   line-height: 2.5;
+   font-size: 0.9em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+   cursor: default;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .supportOptions {
    position: absolute;
    background: #333;
@@ -305,10 +319,28 @@ li > a {
    display: none;
    z-index: 99;
    cursor: default;
+   border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.suppportSubOption {
+.eventOptions {
+   position: absolute;
+   background: #333;
+   width: 200px;
+   height: 80vh;
+   padding: 10px 5px;
+   top: 50px;
+   left: 0;
+   line-height: 2.5;
+   font-size: 0.9em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+   cursor: default;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.optionSubOption {
    position: absolute;
    top: 0px;
    left: 100%;
@@ -317,11 +349,12 @@ li > a {
    height: 80vh;
    width: 0;
    display: none;
+   border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 .navMenu > li > ul > li ul > li:hover a {
    padding-bottom: 5px;
+   color: black;
    border-bottom: 2px solid #e04b3a;
 }
 
@@ -338,22 +371,6 @@ li > a {
       width: 100%;
    }
 }
-
-.eventOptions {
-   position: absolute;
-   background: #333;
-   width: 200px;
-   height: 80vh;
-   padding: 10px 5px;
-   top: 50px;
-   left: 0;
-   line-height: 2.5;
-   font-size: 0.9em;
-   font-family: Zoho_Puvi_Medium;
-   display: none;
-   z-index: 99;
-}
-
 .navMenu > li > ul > li > a {
    color: white;
    padding-bottom: 5px;
