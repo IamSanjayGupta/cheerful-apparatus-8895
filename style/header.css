@@ -280,18 +280,124 @@ li > a {
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
    cursor: pointer;
 }
-.navMenu > li:hover {
-   color: rgb(7, 7, 7);
+
+#SupportMenu:hover > ul {
+   display: block;
 }
+#EventMenu:hover > ul {
+   display: block;
+}
+
+.supportOptions {
+   position: absolute;
+   background: #333;
+   width: 210px;
+   height: 80vh;
+   padding: 10px 5px;
+   top: 50px;
+   left: 0;
+   line-height: 2.5;
+   font-size: 0.9em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+   cursor: default;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.suppportSubOption {
+   position: absolute;
+   top: 0px;
+   left: 100%;
+   background-color: white;
+   padding: 20px;
+   height: 80vh;
+   width: 0;
+   display: none;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navMenu > li > ul > li ul > li:hover a {
+   padding-bottom: 5px;
+   border-bottom: 2px solid #e04b3a;
+}
+
+.navMenu > li > ul > li:hover > ul {
+   display: block;
+   width: 100%;
+   animation: showSubOption 0.3s ease-in-out both;
+}
+@keyframes showSubOption {
+   0% {
+      width: 0%;
+   }
+   100% {
+      width: 100%;
+   }
+}
+
+.eventOptions {
+   position: absolute;
+   background: #333;
+   width: 200px;
+   height: 80vh;
+   padding: 10px 5px;
+   top: 50px;
+   left: 0;
+   line-height: 2.5;
+   font-size: 0.9em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+}
+
+.navMenu > li > ul > li > a {
+   color: white;
+   padding-bottom: 5px;
+   position: relative;
+}
+.lastoption {
+   text-align: center;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   height: 40px;
+   background-color: #e04b3a;
+}
+.navMenu > li > ul > li {
+   padding: 0px 10px;
+   cursor: pointer;
+}
+
+.navMenu > li > ul > li > a::after {
+   content: "";
+   display: block;
+   position: absolute;
+   bottom: -5px;
+   width: 0;
+   height: 3px;
+   background: #e04b3a;
+   transition: width 0.2s;
+}
+.navMenu > li > ul > li:hover > a::after {
+   width: 105%;
+}
+
+.navMenu > li:hover {
+   color: rgb(15, 15, 15);
+}
+
 .navMenu > li:hover::after {
    content: "";
    position: absolute;
    top: 38px;
    border-left: 12px solid transparent;
    border-right: 12px solid transparent;
-   border-bottom: 12px solid black;
+   border-bottom: 12px solid #333;
    z-index: 99999;
    opacity: 0;
    animation: 0.5s opec forwards;
@@ -445,16 +551,6 @@ span.hdng-desc {
 ul li {
    list-style: none;
    text-decoration: none;
-}
-.navMenu > #SolutionMenu:hover::after {
-}
-
-.navMenu > #CompanyMenu:hover::after {
-}
-
-.navMenu > #SupportMenu:hover::after {
-}
-.navMenu > #EventMenu:hover::after {
 }
 
 .downloadBtn {
