@@ -77,9 +77,9 @@
     margin-top: 35px;
 }
 #rightDiv{
-   
-   
     width: 75%;
+    border: 1px solid red;
+    height: 800px;
 }
 #head1{
     color: #777777;
@@ -293,14 +293,13 @@
     color: blue;
     cursor: pointer;
 }
-
 #underline{
     border: 1px solid #EBEAEA;
     height: 3px;
     margin-top: 40px;
 }
 #ordersumhead{
-    font-size: 38px;
+    font-size: 32px;
     margin-top: 20px;
 }
 #sumbill{
@@ -315,10 +314,11 @@
     justify-content: space-between;
 }
 #sumbill>div{
+
     background-color: #7BBB29;
-    width: 35%;
+    width: 65%;
     border-radius: 20px;
-    border-right: 3px solid white;
+    border-left: 3px solid white;
 }
 #sumbill>div>p{
     text-align: center;
@@ -331,195 +331,74 @@
     font-size: 20px;
     font-weight: bolder;
     margin-top: 10px;
-    margin-right: 90px; 
+    margin-left: 60px; 
 }
-#productDetails{
- 
-    height: 30px;
-    width: 85%;
-    margin-top: 30px;
-    color:#5273AC;
+#userInfo{
+   
     display: flex;
     
-    font-weight: bold;
-    font-size: 18px;
+    margin-top: 17px;
 }
-#productDetails>p:first-child{
-    margin-left: 40px;
+#userInfo>div:nth-child(1){
+    
+    margin-top: 10px;
+    width: 29%;
 }
-#productDetails>p:nth-child(2){
-    margin-left: 55px;
-}
-#productDetails>p:nth-child(3){
-    margin-left: 190px;
-}
-#productDetails>p:nth-child(4){
-    margin-left: 60px;
-}
-#productDetails>p:nth-child(5){
-    margin-left: 60px;
-}
-#hrp{
-    width: 90%;
+#userInfo>div:nth-child(2){
+   
+   
+    width: 38%;
+    margin-top: 10px;
    
 }
-
-#productDescription1{
+#userInfo>div:nth-child(3){
     
+    width: 29%;
     
-    display: flex;
-    
-    width: 85%;
-    margin-top: 20px;
 }
-#productDescription1:hover{
-    cursor: pointer;
-    background-color: #f5f0f0;
+#userInfo>div:nth-child(1)>p>span{
+    color: red;
 }
-#divo{
-  
-    width: 40%;
-    line-height: 20px;
-    word-spacing: 4px;
-    font-size: 16px;
+#userInfo>div:nth-child(1)>p{
+    margin-bottom: 40px;
+    margin-left: 17px;
     font-weight: lighter;
-    margin-left:50px ;
-   
 }
-#priceo{
-    border: 1px solid #7F9DB9;
+#userInfo>div:nth-child(2)>input{
+    width: 90%;
+    margin-bottom: 32px;
+  
     height: 25px;
-    width: 40px;
-    margin-left: 90px;
-    
 }
-#productDescription1>p:nth-child(1){
-    margin-left: 40px;
-   
-}
-#uppp{
-  margin-left: 29px;
-}
-#ppp{
-    margin-left: 80px;
-}
-#hhrr{
+#countries{
     width: 90%;
-   border: 1px solid rgb(205, 239, 160); 
-   margin-top: 40px;
+    height: 27px;
+    margin-bottom: 32px;
 }
-#bottompart{
+#userInfo>div:nth-child(3)>div:first-child{
     
-    margin-top: 60px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
-
-#subbottompart1{
-    
-    height: 300px;
-    width: 42%;
-
-}
-#subbottompart2{
-    
-    height: 300px;
-    width: 42%;
-
-}
-#coupon{
-   
-    height: 40%;
-    background-color:rgb(237,237,237);
+    width: 80%;
+    height: 35px;
     border-radius: 10px;
-    width: 85%;
-}
-#pc{
-  color: blue;
-  font-weight: bolder;
-  text-align: center;
-  padding-top: 10px;
-}
-#coupon-code{
-    width: 90%;
-    height: 30px;
-    border-radius: 20px;
-    margin-left: 18px;
-    margin-top: 15px;
-}
-#couponbtn{
-    background-color: #FCB923;
-    width: 8%;
-    height: 29px;
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
-    border-radius: 20px;
-    border:2px solid white;
-    position: absolute;
-    top: 590px;
-    left:810px ;
-}
-#couponbtn:hover{
-    cursor: pointer;
-}
-#gpq{
-    background-color: #FF7B0D;
-    width: 85%;
-    height: 50px;
-    font-size: 25px;
-    color: white;
-    margin-top: 60px;
-    border: none;
-    border-radius: 20px;
-}
-#gpq:hover{
-    cursor: pointer;
-}
-#subprice{
-    
-    height: 50px;
-    display: flex;
-    
     font-size: 18px;
-}
-#subprice>h3:first-child{
-    font-style: italic;
-    color: grey;
-    margin-top: 10px;
-}
-#subprice>h3:last-child{
-    margin-left: 90px;
-    margin-top: 10px;
-}
-#subprice1{
-    
-    height: 50px;
-    display: flex;
-    
-    font-size: 18px;
-}
-#subprice1>h3:first-child{
-    
-    color: rgb(42, 40, 40);
-    margin-top: 10px;
-    
-}
-#subprice1>h3:last-child{
-    margin-left: 55px;
-    margin-top: 10px;
-}
-#contiunecheckout{
-    background-color: #7BBB29;
-    width: 85%;
-    height: 50px;
-    font-size: 25px;
+    background-color: #C4C4C4;
     color: white;
-    margin-top: 80px;
-    border: none;
-    border-radius: 20px;
+    font-weight: bolder;
+    padding-left: 40px;
+    padding-top: 6px;
 }
-#contiunecheckout:hover{
-    cursor: pointer;
+#userInfo>div:nth-child(3)>div:last-child{
+    border: 1px solid #C4C4C4;
+    width: 80%;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#userInfo>div:nth-child(3)>div:last-child>p:first-child{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+#userInfo>div:nth-child(3)>div:last-child>p:last-child{
+    margin-top: 10px;
+    margin-left: 95px;
 }
