@@ -176,7 +176,9 @@ function getinput7() {
 function checkfun(){
     let check=document.getElementById("check").checked
     if(check==true){
-        document.getElementById("pricetotal").innerText="345.00"
+        let price121=Math.random()*10000
+        let price221=price121.toFixed(2)
+        document.getElementById("pricetotal").innerText=price221
     }
     
     else{
@@ -186,9 +188,13 @@ function checkfun(){
 function getedition(){
     let edition=document.getElementById("edisel").value
     if(edition=="Student"){
-        document.getElementById("pricetotal").innerText="245.00"
+        let price121=Math.random()*10000
+        let price221=price121.toFixed(2)
+        document.getElementById("pricetotal").innerText=price221
     }else if(edition=="Professional"){
-        document.getElementById("pricetotal").innerText="345.00"
+        let price121=Math.random()*10000
+        let price221=price121.toFixed(2)
+        document.getElementById("pricetotal").innerText=price221
     }
     else{
         document.getElementById("pricetotal").innerText="0" 

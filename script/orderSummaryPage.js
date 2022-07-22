@@ -123,12 +123,28 @@ function couponfun(){
     let value=document.getElementById("coupon-code").value
     let subprice=document.getElementById("subpricechan")
     let grandprice=document.getElementById("grandpricechan")
-    if(value=="masai30"){
-       subprice.innerText="241.5"
-       grandprice.innerText="241.5"
-    }else{
-        subprice.innerText="345.00"
-       grandprice.innerText="345.00"
-       alert("Enter a valid Coupon Code...")
+    if(value=="masai"){
+        let price121=Math.random()*1000
+        let price221=price121.toFixed(2)
+        if(price221<="345"){
+            subprice.innerText=price221
+       grandprice.innerText=price221
+        }else{
+            subprice.innerText="245.00"
+            grandprice.innerText="245.00"
+        }
+       
     }
+}
+
+function getpriceo(){
+    let price=document.getElementById("priceo").value
+    let value=price*345
+    let showprice=document.getElementById("ppp")
+    let subprice=document.getElementById("subpricechan")
+    let grandprice=document.getElementById("grandpricechan")
+    subprice.innerText=value
+    grandprice.innerText=value
+    showprice.innerText=value
+    showprice=value
 }
