@@ -18,12 +18,12 @@
                 " alt="ManageEngine - Enterprise IT Management">
             </a>
     </div>
-    <div id="frame">
+    <form id="frame">
             <input id="name" type="text" placeholder="Your Name">
-            <input id="name" type="text" placeholder="User Name">
-            <input id="name" type="text" placeholder="Your Email Address"> <img id="icon" src="https://www.iconsdb.com/icons/preview/green/ok-xxl.png" alt="">
-            <input id="name" type="text" placeholder="Password">
-            <button id="sign_up"  >   Sign Up</button>
+            <input id="user_name" type="text" placeholder="User Name">
+            <input id="your_email" type="text" placeholder="Your Email Address"> <img id="icon" src="https://www.iconsdb.com/icons/preview/green/ok-xxl.png" alt="">
+            <input id="your_pass" type="text" placeholder="Password">
+            <button id="sign_up"   >Sign Up  </button>
             <div id="sign_agree">
                 "By clicking 'Sign Up',you agree to the "
                 <a target="_blank" href="https://www.zoho.com/term.html" style="text-decoration:underline ;">terms</a>
@@ -33,7 +33,7 @@
             privacy policy</a>
             " ."
             </div>
-    </div>
+        </form>
     <div id="foot_copy">
         <span id="copy_year">@ 2022</span>
         " Zoho Corp. All rights reserved."
@@ -41,3 +41,84 @@
 </div>
 </body>
 </html>
+<script>
+//     function Page(n,u,e,p){
+//     this.name=n;
+//     this.user_name=u;
+//     this.your_email = e;
+//     this.your_pass=p;
+// }
+
+ 
+function pro(event){
+
+    
+
+event.preventDefault();
+// let form =
+
+let userobj={
+    name:document.getElementById("name").value,
+    user_name: document.getElementById("user_name").value,
+    your_email: document.getElementById("your_email").value,
+    your_pass: document.getElementById("your_pass").value
+}
+
+userobj= JSON.stringify(userobj)
+
+let signup= async()=>{
+    let url= "https:masai-api-mocker.herokuapp.com/auth/register"
+
+    let response= await fetch(url,{
+
+        method: "POST",
+        body: userobj,
+        headers:{
+            "Content-Type": "application.json"
+        }
+    })
+    let data= await response.json()
+console.log(data)
+}
+
+document.getElementById("frame").addEventListener("submit", signup)
+
+// function Page(n,u,e,p){
+//     this.name=n;
+//     this.user_name=u;
+//     this.your_email = e;
+//     this.your_pass=p;
+// }
+
+// console.log(name, user_name,your_email,your_pass)
+// let s1= new Page(name,user_name,your_email,your_pass)
+// if (name && user_name && your_email && your_pass )
+// {
+//     alert("Sign Up sucessful")
+//     user_arr.push(s1)
+//     console.log(s1)
+//     localStorage.setItem("Users", JSON.stringify(user_arr))
+
+// }
+// else alert("Ivalid Details")
+
+
+// let bit = JSON.parse(localStorage.getItem('user'))||[]
+
+
+// window.location.reload();
+
+
+// let flag = true;
+// if(name = "" || user_name=="" ||  your_email =="" || your_pass==""){
+//     alert("Enter Required Data")
+//     flag=false;
+// }
+// if(flag){
+//     alert("Signup Successful")
+//     localStorage.setItem("user",JSON.stringify(bit))
+//     window.location.href="enginelogin.html"
+// }
+
+}
+</script>

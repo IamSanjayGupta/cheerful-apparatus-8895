@@ -11,7 +11,7 @@
 
     </style> 
 </head>
-<body>
+<body onload="startSlideshow()">
 <div id="main_boxse">
     <div id="login_container" >
         
@@ -21,16 +21,16 @@
             <p id="statement" >to access ManageEngine</p>
             
             </div>
-            <div id="email_address">
-                <input type="text" id="email" placeholder="Email address or mobile number">
-                <input type="text" id="email" placeholder="  Password ">
-                <button id="login_button">Next</button>
+            <form id="email_address">
+                <input type="text" id="email_buddy" placeholder="Email address or mobile number">
+                <input type="text" id="email_pasa" placeholder="  Password ">
+                <button id="login_button"  onclick="myfun(event)">Next</button>
                 <button id="forgot"> <a href="https://accounts.zoho.com/password?servicename=ManageEngine&serviceurl=https%3A%2F%2Fme.zoho.com%2Fportal%2Fmestore%2FredirectManageEngine.do&hide_signup=true"> Forgot Password?</a>  </button>
                 <div id="line">
     
                 </div>
     
-            </div>
+            </form>
             <div id="sign_in_using">
             <p id="under_p" >
                 Sign in using
@@ -49,10 +49,17 @@
     </div>
     
      <div id="boxes">
-        <div id="medium_box"></div>
-        <div>
-        <h2>Passwordless sign-in</h2>
-        <p>Move away from risky passwords and  <br>
+       
+        <div id="slideshow"> 
+            
+
+            <!-- <img id="slideshow" src="https://accounts.zoho.com/v2/components/images/passwordless_illustration2x.png" alt=""> -->
+            <!-- <div></div> -->
+      
+    </div>
+        <div id="medium_box2">
+        <h2 id="pass_less">Passwordless sign-in</h2>
+        <p id="move_less">Move away from risky passwords and <br>
              experience one-tap access to  
             Download and install OneAuth.
             </p>
@@ -64,3 +71,113 @@
 
 </body>
 </html>
+<script>
+    let Data = JSON.parse(localStorage.getItem("user"))||[];
+function myfun(event){
+    event.preventDefault()
+    let flag=true;
+    let email_buddy=email_address.email_buddy.value;
+    if(email_buddy==""){
+        flag=false;
+    }
+    
+    let email_pasa=email_address.email_pasa.value;
+    if(email_pasa==""){
+        alert("Wrong credentials")
+        flag=false;
+    }
+    if( flag){
+    var result=true;
+        for(var i=0;i<Data.length;i++){
+            var obj=Data[i]
+            if(obj.email_buddy==email_buddy && obj.email_pasa==email_pasa){
+                result=true;
+        }
+        
+    }
+    }
+    if(result){
+        alert("Next Sucessful")
+    
+        // window.location.href="enginesign.html"
+    }
+    else if(flag){
+        alert("User doesn't exist, Next")
+    }
+    
+    }
+
+    // ==========================================Slidesow========================================
+
+
+    
+       
+        // let slideshow = document.querySelector("#slideshow")
+
+        // function disp(dat){
+        //     slideshow.innerHTML=null;
+        //     dat.forEach(function(ele){
+        //       let image = document.createElement("img")
+        //       //image.setAttribute("id","box")
+        //       image.src = ele.Image;
+        
+        //       //console.log(image)
+        //       slideshow.append(image)
+        //       image.append()  
+        //     }) 
+        // }
+
+        // disp(obj)
+        
+        
+        // let slideIn=0
+        // slide()
+        // function slide(){
+        // let i;
+        // let x = document.getElementsByTagName("img")
+        // for(i=0;i < 3;i++){
+        //     x[i].style.display = "none";
+        // }
+        // slideIn++;
+        // if(slideIn > 3) {slideIn=1}
+        // x[slideIn-1].style.display = "block"
+        // setTimeout(slide,3000);
+        // }
+
+        // let slideshow = document.querySelector("#slideshow")
+
+let i= 0
+    function startSlideshow(){
+
+
+        let obj=["https://accounts.zoho.com/v2/components/images/passwordless_illustration2x.png",
+        "https://accounts.zoho.com/v2/components/images/recovery_illustration2x.png",
+        "https://accounts.zoho.com/v2/components/images/mfa_illustration2x.png",
+               ];
+        let sl= document.getElementById("slideshow")
+
+        let id=  setInterval(function(){
+            console.log(i);
+
+            if(i == obj.length){
+                i=0
+            }
+
+            let image = document.createElement("img")
+            image.setAttribute("src", obj[i])
+            sl.innerHTML= null
+            sl.append(image)
+            i++
+
+        }, 3000)
+    }
+
+    function pause(){
+        clearInterval(id)
+    }
+
+      
+
+
+
+</script>
