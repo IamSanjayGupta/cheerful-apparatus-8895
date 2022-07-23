@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="assets\logo.png" type="image/x-icon" />
+    
+    <title>Billing Page</title>
     <link rel="stylesheet" href="./style/billingPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
 </head>
-<body>
+<body onload="getPrice()">
     <section>
         <div id="ospNav">
             <div id="subosp1">
@@ -472,8 +475,73 @@
                         <div>Order Summary</div>
                         <div>
                             <p>Order Total</p>
-                            <p>USD $<span>345.00</span> </p>
+                            <p>USD $<span id="getprice2">345.00</span> </p>
                         </div>
+                    </div>
+                 </div>
+                 
+                 <div id="underlineee"></div>
+                 <p id="ordersumhead2">Card Details</p>
+                 <div id="carddetailsDiv">
+                    <div>
+                        <p>Credit Card Number <span  style="color: red;">*</span></p>
+                        <p>Payment Type</p>
+                        <p>CSC (CVV2/CVC2) Number
+                            <span style="color: red;">*</span>
+                        </p>
+                        <p>Expiration Date</p>
+                        <h2>Grand Total</h2>
+                    </div>
+                    <div>
+                        <input type="text">
+                        <img id="payimg" src="https://img.zohostatic.com/zohostore/Jul_07_2022_8/images/pay-method.png" alt=""><br>
+                        <input id="input01" type="text"><br>
+                        <div id="monyear">
+                            <select name="month">
+                                <option value="01">Jan</option>
+                                <option value="02">Feb</option>
+                                <option value="03">Mar</option>
+                                <option value="04">Apr</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">Aug</option>
+                                <option value="09">Sept</option>
+                                <option value="10">Oct</option>
+                                <option value="11">Nov</option>
+                                <option value="12">Dec</option>
+                             </select> 
+                             <select name="year">
+                                <option value="2030">2022</option>
+                                <option value="2029">2023</option>
+                                <option value="2028">2024</option>
+                                <option value="2027">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2027</option>
+                                <option value="2024">2028</option>
+                                <option value="2023">2029</option>
+                                <option value="2022">2030</option>
+                                <option value="2021">2031</option>
+                                <option value="2020">2032</option>
+                                <option value="2019">2033</option>
+                                <option value="2018">2034</option>
+                                <option value="2017">2035</option>
+                                <option value="2016">2036</option>
+                                <option value="2015">2037</option>
+                                <option value="2014">2038</option>
+                                <option value="2013">2039</option>
+                                <option value="2012">2040</option>
+                                <option value="2011">2041</option>
+                              
+                           </select>
+                        </div>
+                       <h2 style="margin-top: 35px;">USD $ <span id="getprice1">345.0</span></h2>
+                      <p style="margin-top: 28px;">Your Credit Card Details are not stored. <span class="hover">See Zoho Privacy Policy</span> </p><br>
+                      <div style="display: flex;gap: 5px;"><input  type="checkbox" name="" id="paycheck1" onclick="checkCheckbox()"><p style="font-size: 18px;">I agree to the <span class="hover">Terms & Conditions</span> </p></div>
+                      <p style="margin-top: 30px;font-size: 19px;width: 80%;">Note: All fields marked as (<span style="color: red;">*</span>) are mandatory</p><br>
+                      <button id="checkoutbutton">Pay and Checkout</button>
+                      <button id="checkoutbutton1"><a id="checking1" href="./paymentPage.html" style="color: white; text-decoration: none;">Pay and Checkout</a></button>
+                        
                     </div>
                  </div>
             </div>

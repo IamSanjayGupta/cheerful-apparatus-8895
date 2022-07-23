@@ -4,335 +4,206 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="assets\logo.png" type="image/x-icon" />
       <title>Header</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
       <link rel="stylesheet" href="./style/header.css" />
+      <style>
+         .brandBanner {
+            height: 400px !important;
+            min-height: auto !important;
+            padding: 5vh 0;
+            overflow: hidden;
+            width: 100%;
+            background: url(https://www.manageengine.com/images/me20-line-img.svg) no-repeat;
+            background-size: contain;
+            background-color: #fee500;
+            position: relative;
+         }
+         .brandBanner > .ribbon {
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            width: 500px;
+         }
+         .brandBanner > .image20 {
+            width: 200px;
+            height: auto;
+            position: absolute;
+            right: 200px;
+            top: 100px;
+         }
+         .brandBanner > .bannerContent {
+            position: absolute;
+            left: 10%;
+            top: 30%;
+            line-height: 2;
+         }
+
+         .brandBanner > .bannerContent > button {
+            display: inline-block;
+            color: #fff;
+            background: linear-gradient(to right, #0078b3, #015998);
+            padding: 11px 20px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-family: "Zoho_Puvi_SemiBold";
+         }
+         .brandBanner > .bannerContent > button:hover {
+            background: linear-gradient(to right, #015998, #0078b3);
+         }
+         .headlines {
+            font-size: 16px;
+            display: block;
+            width: 70vw;
+            margin: 40px auto;
+            text-align: center;
+            color: #444;
+         }
+         .ProductList {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+            text-align: center;
+         }
+         .ProductList > .animate {
+            overflow: hidden;
+            line-height: 1.2;
+            padding: 35px 30px;
+            height: 250px;
+            transition: 0.8s;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+         }
+
+         .animate div > h3 {
+            font-size: 0.9em;
+            margin-top: 15px;
+         }
+
+         .animate div > h4 {
+            font-size: 0.8em;
+            margin-top: 30px;
+         }
+         .animate div > p {
+            margin-top: 50px;
+         }
+
+         .ProductList .animate:hover {
+            background: url(https://www.manageengine.com/images/list-bg.png) no-repeat;
+            background-size: cover;
+         }
+         .ProductList .animate:hover div {
+            margin-top: -140px;
+            transition: margin 0.6s;
+         }
+      </style>
    </head>
    <body>
-      <div class="mainHeader">
-         <div class="topHeader">
-            <div class="topHeader-rhs">
-               <li>
-                  <span>Contact</span>
-                  <div class="contactDrop">
-                     <h4>Toll Free</h4>
-                     <a href="tel:+18887209500"><strong>US:</strong> +1 888 720 9500</a>
-                     <a href="tel:+18887911189"><strong>US:</strong> +1 888 791 1189</a>
-                     <a href="tel:+18334200996"><strong>US Sales:</strong> +1 833-420-0996</a>
-                     <a href="tel:+18334160441"><strong>CA Sales:</strong> +1 833-416-0441</a>
-                     <a href="tel:1800631268"><strong>Aus:</strong> 1800 631 268</a>
-                     <a href="tel:08000286590"><strong>UK:</strong> 0800 028 6590</a>
-                     <a href="tel:18005726673"><strong>IN:</strong> 1800 572 6673</a>
-                     <h4>Tel</h4>
-                     <a href="tel:+19259249500"><strong>Intl:</strong> +1 925 924 9500</a>
-                     <a href="tel:+864006608680"><strong>CN:</strong> +86 400 660 8680</a>
-                     <a href="tel:+15146739946"><strong>CA:</strong> +1 514 673 9946</a>
-                     <h4>Email</h4>
-                     <a href="mailto:sales@manageengine.com">sales@manageengine.com</a>
-                  </div>
-               </li>
-               <li><a href="">Store</a></li>
-               <li>Partners</li>
-               <li>Affiliate</li>
-               <li>
-                  <span><i class="fa-solid fa-user"></i></span>
-                  <div class="userDrop">
-                     <a href="#">Login</a>
-                     <a>|</a>
-                     <a href="#">Register</a>
-                  </div>
-               </li>
-               <li>
-                  <span> <i class="fa-solid fa-magnifying-glass"> </i> </span>
-                  <div class="searchDrop">
-                     <input type="search" placeholder="Search..." id="advanceSearch" />
-                     <div class="searchSuggestions">
-                        <a href="#">Desktop Management</a>
-                        |
-                        <a href="#">On-premises</a>
-                        |
-                        <a href="#">OS Deployment</a>
-                        |
-                        <a href="#">Remote Access Software</a>
-                        |
-                        <a href="#">Asset Management</a>
-                        |
-                        <a href="#">Customer Support Software</a>
-                        |
-                        <a href="#">Help Desk Software</a>
-                        |
-                        <a href="#">Remote Support Software</a>
-                        |
-                        <a href="#">Active Directory Management and Reporting</a>
-                        |
-                        <a href="#">Active Directory Auditing</a>
-                        |
-                        <a href="#">Identity Password Management &amp;IT Self-Service</a>
-                        |
-                        <a href="#">Exchange Server Auditing &amp;Reporting</a>
-                        |
-                        <a href="#">Active Directory Backup &amp;Recovery Tool</a>
-                        |
-                        <a href="#">SharePoint Reporting &amp;Auditing</a>
-                        |
-                        <a href="#">File server auditing &amp;data discovery</a>
-                        |
-                        <a href="#">Active Directory Identity Management (AD360)</a>
-                        |
-                        <a href="#">Application Performance Monitoring (APM)</a>
-                        |
-                        <a href="#">Website Monitoring &amp;Server Monitoring (Cloud)</a>
-                        |
-                        <a href="#">Network Monitoring Software</a>
-                        |
-                        <a href="#">Bandwidth Monitoring &amp;Traffic Analysis</a>
-                        |
-                        <a href="#">Microsoft 365 Management and Reporting</a>
-                        |
-                        <a href="#">Mobile device management</a>
-                        |
-                        <a href="#">Browser security &amp;management</a>
-                        |
-                        <a href="#">Privileged Access Management</a>
-                     </div>
-                  </div>
-               </li>
+      <div class="mainHeader"></div>
+      <div class="brandBanner">
+         <img class="ribbon" src="https://www.manageengine.com/images/me20-rippon.png" alt="" />
+         <img class="image20" src="https://www.manageengine.com/images/me20-logo.svg" alt="" />
+         <div class="bannerContent">
+            <h1>Thank You.</h1>
+            <h3>ManageEngine turns 20, and we’re celebrating <br />our customers for making our journey so special.</h3>
+            <button>JOIN THE CELEBRATION</button>
+         </div>
+      </div>
+      <div class="headlines">
+         <p>
+            We have complete and easy solutions for even your most difficult IT management problems, from keeping your business safe, to ensuring high
+            availability, to making your users happy.
+         </p>
+      </div>
+      <div class="ProductList">
+         <div class="animate">
+            <div>
+               <span class="mehome-ico iam-ico"></span>
+               <h3>Identity and access <br />management</h3>
+               <h4>Active Directory &amp; M365 management | MFA &amp; SSO | Zero Trust | PAM</h4>
+               <p>Manage, govern, and secure digital identities and privileged access.</p>
+               <a href="#">Learn more</a>
             </div>
          </div>
-         <div class="bottomHeader">
-            <div class="companyLogo">
-               <img src="https://www.manageengine.com/images/logo/manageengine-logo.svg" alt="" />
-               <img src="https://www.manageengine.com/images/me-20.png" alt="" />
+         <div class="animate">
+            <div>
+               <span class="mehome-ico esm-ico"></span>
+               <h3>Enterprise <br />service management</h3>
+               <h4>IT service delivery | Customer support | IT asset management</h4>
+               <p>Design, automate, deliver, and manage IT and business services.</p>
+               <a href="#">Learn more</a>
             </div>
-            <div class="navMenu">
-               <li id="ProductMenu">
-                  <span>Products</span>
-               </li>
-               <li id="SolutionMenu">Solutions</li>
-               <li id="CompanyMenu">Company</li>
-               <li id="SupportMenu">Support</li>
-               <li id="EventMenu">Events</li>
-               <div class="productOptions navMenuOptions">
-                  <div class="tab-nav">
-                     <li class="tag-nav-active">
-                        <div class="tabIcon"><i class="fa-regular fa-id-badge"></i></div>
-                        <div class="tabContent">
-                           <p>Identity and access management</p>
-                           <p class="subTitle">Active Directory & M365 management&nbsp; | &nbsp;MFA & SSO | Zero Trust | PAM</p>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="tabIcon"><i class="fa-solid fa-headphones-simple"></i></div>
-                        <div class="tabContent">
-                           <p>Enterprise service management</p>
-                           <p class="subTitle">IT service delivery | Customer support | IT asset management</p>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="tabIcon"><i class="fa-solid fa-tv"></i></div>
-                        <div class="tabContent">
-                           <p>Unified endpoint management and security</p>
-                           <p class="subTitle">Desktops | Laptops | Servers | Mobile devices | Browsers</p>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="tabIcon"><i class="fa-solid fa-server"></i></div>
-                        <div class="tabContent">
-                           <p>IT operations management</p>
-                           <p class="subTitle">Network monitoring | Server monitoring | Applications management</p>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="tabIcon"><i class="fa-solid fa-shield-halved"></i></div>
-                        <div class="tabContent">
-                           <p>Security information and event management</p>
-                           <p class="subTitle">Log management | Security auditing | Threat detection and<br />response | UEBA</p>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="tabIcon"><i class="fa-solid fa-chart-pie"></i></div>
-                        <div class="tabContent">
-                           <p>Advanced IT analytics</p>
-                           <p class="subTitle">IT operational analytics | Predictive analytics | Augmented analytics</p>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="tabIcon"><i class="fa-solid fa-code"></i></div>
-                        <div class="tabContent">
-                           <p>Low-code app development</p>
-                           <p class="subTitle">Business process management | Workflow automation | Custom apps</p>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="tabIcon"><i class="fa-solid fa-cloud"></i></div>
-                        <div class="tabContent">
-                           <p>Cloud solutions for enterprise IT</p>
-                           <p class="subTitle">Cloud-native applications | Zoho business applications for IT</p>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="tabIcon"><i class="fa-regular fa-chart-bar"></i></div>
-                        <div class="tabContent">
-                           <p>IT management for MSPs</p>
-                           <p class="subTitle">RMM | UEM | ITSM | ITOM | IAM</p>
-                        </div>
-                     </li>
-                  </div>
-                  <div class="tab-stages">
-                     <div style="display: none">
-                        <div>
-                           <h2 class="tab-title sub-heading">
-                              <a href="javascript:void(0);">Active Directory <br />management </a>
-                              <span class="hdng-desc">Manage, track, and secure Active Directory.</span>
-                           </h2>
-                           <ul class="products-lists">
-                              <li>
-                                 <a href="javascript:void(0);">
-                                    <span>ADManager Plus</span>
-                                    <p>Active Directory, Microsoft 365, and Exchange management and reporting</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://www.manageengine.com/products/active-directory-audit/?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>ADAudit Plus</span>
-                                    <p>Real-time Active Directory, file, and Windows server change auditing</p></a
-                                 >
-                              </li>
-                              <li>
-                                 <a href="https://www.manageengine.com/products/self-service-password/?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>ADSelfService Plus</span>
-                                    <p>Password self-service, endpoint MFA, conditional access, and enterprise SSO</p></a
-                                 >
-                              </li>
-                              <li>
-                                 <a href="https://www.manageengine.com/products/exchange-reports/?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>Exchange Reporter Plus</span>
-                                    <p>Reporting, auditing, and monitoring for hybrid Exchange and Skype</p></a
-                                 >
-                              </li>
-                              <li>
-                                 <a href="https://www.manageengine.com/ad-recovery-manager/?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>RecoveryManager Plus</span>
-                                    <p>Active Directory, Microsoft 365, and Exchange backup and recovery</p></a
-                                 >
-                              </li>
-                           </ul>
-                        </div>
-                        <div>
-                           <h2 class="tab-title sub-heading">
-                              <a href="javascript:void(0);">Identity governance <br />and administration</a>
-                              <span class="hdng-desc">Orchestrate user identity management and access controls for Zero Trust.</span>
-                           </h2>
-                           <ul class="products-lists">
-                              <li>
-                                 <a href="https://www.manageengine.com/active-directory-360/index.html?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>AD360</span>
-                                    <p>Workforce identity and access management for hybrid ecosystems</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://www.manageengine.com/microsoft-365-management-reporting/?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>M365 Manager Plus</span>
-                                    <p>Microsoft 365 management, reporting, and auditing</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://www.manageengine.com/identity-management/index.html?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>Identity Manager Plus</span>
-                                    <p>Secure single sign-on for enterprise applications</p>
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                        <div>
-                           <h2 class="tab-title sub-heading">
-                              <a href="javascript:void(0);">Identity governance <br />and administration</a>
-                              <span class="hdng-desc">Orchestrate user identity management and access controls for Zero Trust.</span>
-                           </h2>
-                           <ul class="products-lists">
-                              <li>
-                                 <a href="https://www.manageengine.com/privileged-access-management/?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>PAM360</span>
-                                    <p>Complete privileged access security for enterprises</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://www.manageengine.com/products/passwordmanagerpro/?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>Password Manager Pro</span>
-                                    <p>Privileged password management</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://www.manageengine.com/privileged-session-management/?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>Access Manager Plus</span>
-                                    <p>Secure remote access and privileged session management</p>
-                                 </a>
-                              </li>
-                              <li>
-                                 <a href="https://www.manageengine.com/key-manager/?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
-                                    <span>Key Manager Plus</span>
-                                    <p>SSH key and SSL/TLS certificate management</p>
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                     <div style="display: none">
-                        <div>
-                           <h2 class="tab-title sub-heading">
-                              <a href="javascript:void(0);">Enterprise and IT service <br />management</a>
-                              <span class="hdng-desc">Deliver a consistent employee experience across business functions.</span>
-                           </h2>
-                           <ul class="products-lists">
-                              <li>
-                                 <a href="https://www.manageengine.com/products/service-desk/?pos=MEhome&amp;loc=ProdMenu&amp;cat=servicemgmt">
-                                    <span>ServiceDesk Plus</span>
-                                    <p>Full-stack service management for enterprises</p>
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                        <div>
-                           <h2 class="tab-title sub-heading">
-                              <a href="javascript:void(0);">Customer service <br />management</a>
-                              <span class="hdng-desc">Build a one-stop portal for customers with efficient account management.</span>
-                           </h2>
-                           <ul class="products-lists">
-                              <li>
-                                 <a href="https://www.manageengine.com/products/support-center/?pos=MEhome&amp;loc=ProdMenu&amp;cat=servicemgmt">
-                                    <span>SupportCenter Plus</span>
-                                    <p>Customer support with built-in billing for businesses</p>
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                        <div>
-                           <h2 class="tab-title sub-heading">
-                              <a href="javascript:void(0);">IT asset <br />management</a>
-                              <span class="hdng-desc">Centralize and automate the complete IT asset life cycle.</span>
-                           </h2>
-                           <ul class="products-lists">
-                              <li>
-                                 <a href="https://www.manageengine.com/products/asset-explorer/?pos=MEhome&amp;loc=ProdMenu&amp;cat=servicemgmt">
-                                    <span>AssetExplorer</span>
-                                    <p>IT asset management with an integrated CMDB</p>
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+         </div>
+         <div class="animate">
+            <div>
+               <span class="mehome-ico uem-ico"></span>
+               <h3>Unified endpoint <br />management and security</h3>
+               <h4>Desktops | Laptops | Servers | Mobile devices | Browsers</h4>
+               <p>Manage and secure desktops, servers, laptops, mobile devices, and web browsers.</p>
+               <a href="#">Learn more</a>
             </div>
-            <div class="downloadBtn">
-               <button id="FreeDownloadBtn">FREE DOWNLOADS</button>
+         </div>
+         <div class="animate">
+            <div>
+               <span class="mehome-ico itom-ico"></span>
+               <h3>IT operations <br />management</h3>
+               <h4>Network monitoring | Server monitoring | Applications management</h4>
+               <p>Monitor and manage your network, servers, and applications.</p>
+               <a href="#">Learn more</a>
+            </div>
+         </div>
+         <div class="animate">
+            <div>
+               <span class="mehome-ico siem-ico"></span>
+               <h3>Security information and <br />event management</h3>
+               <h4>Log management | Security auditing | Threat detection and response | UEBA</h4>
+               <p>Secure your network from cyberattacks and ensure compliance.</p>
+               <a href="#">Learn more</a>
+            </div>
+         </div>
+         <div class="animate">
+            <div>
+               <span class="mehome-ico analytics-ico"></span>
+               <h3>Advanced <br />IT analytics</h3>
+               <h4>IT operational analytics | Predictive analytics | Augmented analytics</h4>
+               <p>Visualize IT data and gain actionable insights into IT operations.</p>
+               <a href="#">Learn more</a>
+            </div>
+         </div>
+         <div class="animate">
+            <div>
+               <span class="mehome-ico lowcode-ico"></span>
+               <h3>Low-code app development</h3>
+               <h4>Business process management | Workflow automation | Custom apps</h4>
+               <br />
+               <p>Build powerful custom applications rapidly and launch them on-premises.</p>
+               <a href="#">Learn more</a>
+            </div>
+         </div>
+         <div class="animate">
+            <div>
+               <span class="mehome-ico msp-ico"></span>
+               <h3>IT management <br />for MSPs</h3>
+               <h4>RMM | UEM | ITSM | ITOM | IAM</h4>
+               <br />
+               <p>Grow your MSP business with scalable and secure IT management solutions.</p>
+               <a href="#">Learn more</a>
+            </div>
+         </div>
+         <div class="animate">
+            <div>
+               <span class="mehome-ico cloud-ico"></span>
+               <h3>Cloud solutions for <br />enterprise IT</h3>
+               <h4>Cloud-ready | Cloud-native</h4>
+               <br />
+               <p>Scale your IT to support multi-cloud and hybrid infrastructures.</p>
+               <a href="#">Learn more</a>
             </div>
          </div>
       </div>
-
       <div class="HomePage"></div>
    </body>
 </html>
 <script src="./script/header.js" type="module"></script>
-
-<p>Sanjay Gupta</p>

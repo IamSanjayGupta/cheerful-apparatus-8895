@@ -18,7 +18,11 @@ let Submitform= (event)=>{
 
     // console.log(name);
 
-    if(name.length > 5 && email.length > 5 && number.length > 5 && req.length>5 ) alert(" Your Request for the Demo is approved we will reach to you Soon !")
+    if(name && email && number && req && date && country )
+    {
+        alert(" Your Request for the Demo is approved we will reach to you Soon !")
+       window.location.reload()
+    } 
     else alert("Please Enter the input fields")
 }
 

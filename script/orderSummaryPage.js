@@ -126,14 +126,19 @@ function couponfun(){
     if(value=="masai"){
         let price121=Math.random()*1000
         let price221=price121.toFixed(2)
+        let price
         if(price221<="345"){
             subprice.innerText=price221
        grandprice.innerText=price221
+      price=price221
+      localStorage.setItem("Price",JSON.stringify(price))
         }else{
             subprice.innerText="245.00"
             grandprice.innerText="245.00"
+            price="245.00"
+            localStorage.setItem("Price",JSON.stringify(price))
         }
-       
+      
     }
 }
 
