@@ -1,6 +1,5 @@
-
-let subfooter= ()=>{
-    return `<h1 class="head">A complete suite of IAM and IT compliance solutions</h1>
+let subfooter = () => {
+   return `<h1 class="head">A complete suite of IAM and IT compliance solutions</h1>
     <br>
     <div id="rel-prod">
         <div>Related Products</div>
@@ -24,20 +23,17 @@ let subfooter= ()=>{
             <a href=""><h5>» SharePoint Management and Auditing Solution</h5></a>
             <a href=""><h5>» Active Directory FREE Tools</h5></a>
         </div>
-    </div>`
-}
+    </div>`;
+};
 
-
-let topnavbar= ()=>{
-
-    return `  <div id="logo">
+let topnavbar = () => {
+   return `  <div id="logo">
             <a href="./homepage.html"><img  src="https://www.manageengine.com/images/logo/manageengine-logo.svg" alt=""></a>
             <img  src="https://www.manageengine.com/images/me-20.png" alt="">
         </div>
 
         <div>
             <p>Products</p>
-            <p>Store</p>
             <p>Store</p>
             <p>Partners</p>
             <p>Affliiate</p>
@@ -49,13 +45,11 @@ let topnavbar= ()=>{
             <span class="material-symbols-outlined">search</span>
             
         </div>
-`
-}
+`;
+};
 
-
-let subnavbar= ()=>{
-
-    return ` <div>
+let subnavbar = () => {
+   return ` <div>
                  <p id="ad360">AD360</p>
              </div>
                 <div>
@@ -66,8 +60,7 @@ let subnavbar= ()=>{
                     <a href="./qoute.html">Get Quote</a>
                     <a href="./support.html">Support</a>
                     <button id="revert">Download</button>
-                </div>`
-}
+                </div>`;
+};
 
-
-export  {subfooter,topnavbar,subnavbar};
+export { subfooter, topnavbar, subnavbar };
