@@ -429,7 +429,7 @@
 
 }
 #subhead1{
-    display: none;
+    display: block;
     color: #777777;
    
     font-weight: 300;

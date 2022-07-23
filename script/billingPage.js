@@ -118,3 +118,25 @@
 
     }
 }
+
+function checkCheckbox(){
+    let check=document.getElementById("paycheck1").checked
+    
+    let btn=document.getElementById("checkoutbutton")
+    let btn1=document.getElementById("checkoutbutton1")
+   if(check==true){
+    btn1.style.display="block"
+    btn.style.display="none"
+   }else{
+    btn1.style.display="none"
+    btn.style.display="block"
+   }
+}
+
+function getPrice(){
+    let price=JSON.parse(localStorage.getItem("Price"))
+   let price1=document.getElementById("getprice1")
+   price1.innerText=price
+   let price2=document.getElementById("getprice2")
+   price2.innerText=price
+}

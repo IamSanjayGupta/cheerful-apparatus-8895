@@ -72,14 +72,13 @@
 #leftDiv{
  
     border-right: 1px solid rgb(231, 226, 226);
-    height: 800px;
+    height: 1400px;
     width: 25%;
     margin-top: 35px;
 }
 #rightDiv{
     width: 75%;
-    border: 1px solid red;
-    height: 800px;
+   
 }
 #head1{
     color: #777777;
@@ -299,7 +298,7 @@
     margin-top: 40px;
 }
 #ordersumhead{
-    font-size: 32px;
+    font-size: 34px;
     margin-top: 20px;
 }
 #sumbill{
@@ -357,12 +356,13 @@
     
 }
 #userInfo>div:nth-child(1)>p>span{
-    color: red;
+    color: rgb(252, 70, 70);
 }
 #userInfo>div:nth-child(1)>p{
     margin-bottom: 40px;
     margin-left: 17px;
     font-weight: lighter;
+    
 }
 #userInfo>div:nth-child(2)>input{
     width: 90%;
@@ -401,4 +401,99 @@
 #userInfo>div:nth-child(3)>div:last-child>p:last-child{
     margin-top: 10px;
     margin-left: 95px;
+}
+
+#underlineee{
+    border: 1px solid#e6e3e3;
+    width: 48%;
+    margin-left: 80px;
+    margin-top: 60px;
+}
+#ordersumhead2{
+    font-size: 34px;
+    margin-top: 34px;
+}
+#carddetailsDiv{
+    
+    width: 70%;
+    margin-top: 15px;
+    display: flex;
+    
+}
+#carddetailsDiv>div:first-child{
+    
+    width: 40%;
+    margin-left: 20px;
+}
+#carddetailsDiv>div:last-child{
+   
+    width: 56%;
+}
+#carddetailsDiv>div:first-child>p{
+    font-size: 17px;
+    margin-top: 25px;
+}
+#carddetailsDiv>div:first-child>h2{
+    font-size: 27px;
+    margin-top: 35px;
+}
+#carddetailsDiv>div:last-child>input:first-child{
+    width: 90%;
+    margin-top: 18px;
+  
+    height: 25px;
+}
+#payimg{
+    width:40% ;
+    height:25px ;
+    margin-top: 20px;
+}
+#input01{
+    width: 90%;
+    margin-top: 18px;
+  
+    height: 25px;
+}
+#monyear{
+   
+    margin-top: 20px;
+  
+    height: 28px;
+}
+#monyear>select{
+    height:25px ;
+}
+.hover{
+color: rgb(56, 56, 246);
+}
+.hover:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:rgb(56, 56, 246) ;
+}
+#checkoutbutton{
+    background-color: #AAD956;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 21px;
+    border: none;
+    width: 60%;
+    margin-top: 35px;
+}
+#checkoutbutton1{
+    background-color: #AAD956;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 21px;
+    border: none;
+    width: 12%;
+    position: absolute;
+    top: 1404px;
+    left: 940px;
+    display: none;
+}
+#checkoutbutton1:hover{
+    cursor: pointer;
 }
