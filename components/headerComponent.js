@@ -1167,4 +1167,4 @@ const bottomHeader = () => {
 </div>`;
 };
 
-export { topHeader };
+export { topHeader, bottomHeader };

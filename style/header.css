@@ -565,6 +565,14 @@ h2.tab-title a {
    text-decoration: none !important;
    cursor: unset;
 }
+h2.tab-title:after {
+   content: "";
+   display: block;
+   height: 2px;
+   width: 50px;
+   background: #ffb50d;
+   margin-top: 12px;
+}
 span.hdng-desc {
    font-family: Zoho_Puvi_Regular;
    display: block;

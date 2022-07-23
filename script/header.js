@@ -1,6 +1,6 @@
-import { topHeader } from "../components/headerComponent.js";
+import { topHeader, bottomHeader } from "../components/headerComponent.js";
 
-//document.querySelector(".mainHeader").innerHTML = topHeader() + topHeader();
+document.querySelector(".mainHeader").innerHTML = topHeader() + bottomHeader();
 
 // navbar fix
 // When the user scrolls the page, execute myFunction
