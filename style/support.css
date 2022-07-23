@@ -1,9 +1,49 @@
+@font-face {
+    font-family: 'Zoho_Puvi_Bold';
+    src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.eot);
+    src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.eot) format("embedded-opentype"), url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.woff2) format("woff2"), url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_bold.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+
+
+
+@font-face {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://webfonts.zohostatic.com/robotocondensedregular/font.eot);
+    src: url(https://webfonts.zohostatic.com/robotocondensedregular/font.eot?#iefix) format("eot"), url(https://webfonts.zohostatic.com/robotocondensedregular/font.woff2) format("woff2"), url(https://webfonts.zohostatic.com/robotocondensedregular/font.woff) format("woff"), url(https://webfonts.zohostatic.com/robotocondensedregular/font.ttf) format("truetype"), url(https://webfonts.zohostatic.com/robotocondensedregular/font.svg#RobotoCondensed-Regular) format("svg")
+}
+
+
+@font-face {
+    font-family: 'Zoho_Puvi_Regular';
+    src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot);
+    src: url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.eot) format("embedded-opentype"), url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.woff2) format("woff2"), url(https://fonts.zohostatic.com/zohopuvi/3.5/zoho_puvi_regular.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+
+*{
+    color: rgb(51, 51, 51);
+}
+
 #support-sec{
     padding-top: 5%;
     display: flex;
     /* border: 1px solid; */
     /* padding-left: 10%;
     padding-right: 20%; */
+}
+
+h3{
+    font-family:Zoho_Puvi;
+    color: rgb(137, 136, 136);
 }
 
 #spt-sec-1{
@@ -53,6 +93,7 @@
 #supp-category>div >span,#supp-category>div >img{
     font-size: 50px;
     height: 35px;
+    color: rgb(106, 104, 104);
 }
 
 #contact{
@@ -74,8 +115,9 @@
     align-items: center;
     padding-left: 10px;
     font-weight: bolder;
-    font-size: 28px;
-    padding: 20px;
+    font-size:28px;
+    font-family: Zoho_Puvi_Bold;
+    padding: 10px;
 
 }
 
@@ -90,12 +132,14 @@
 #cont-div>span{
     font-size: 40px;
     margin-right: 5%;
+    color: rgb(113, 112, 112);
 }
 
 
 #cont-div>div >a{
     color: rgb(16, 83, 109);
-
+    font-family: zoho_puvi_regular;
+    font-size: 16px;
 }
 
 #form{
@@ -143,6 +187,7 @@ form >h2{
     color: white;
     border-radius: 4px
 }
+
 
 #reset{
     background-color: #069b4e77;

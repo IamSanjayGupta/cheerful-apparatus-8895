@@ -1,6 +1,6 @@
 
 let subfooter= ()=>{
-    return `<h1 class="head"     >A complete suite of IAM and IT compliance solutions</h1>
+    return `<h1 class="head">A complete suite of IAM and IT compliance solutions</h1>
     <br>
     <div id="rel-prod">
         <div>Related Products</div>
@@ -31,25 +31,24 @@ let subfooter= ()=>{
 let topnavbar= ()=>{
 
     return `  <div id="logo">
-    <img  src="https://www.manageengine.com/images/logo/manageengine-logo.svg" alt="">
-    <img  src="https://www.manageengine.com/images/me-20.png" alt="">
-</div>
+            <a href="./homepage.html"><img  src="https://www.manageengine.com/images/logo/manageengine-logo.svg" alt=""></a>
+            <img  src="https://www.manageengine.com/images/me-20.png" alt="">
+        </div>
 
-<div>
-    <h5>Products</h5>
-    <h5>Store</h5>
-    <h5>Store</h5>
-    <h5>Partners</h5>
-    <h5>Affliiate</h5>
-    <h5>Support</h5>
-    <p>|</p>
-    <a href=""><span class="material-symbols-outlined">
-        person
-        </span></a>
-        <span class="material-symbols-outlined">
-            search
-            </span>
-</div>
+        <div>
+            <p>Products</p>
+            <p>Store</p>
+            <p>Store</p>
+            <p>Partners</p>
+            <p>Affliiate</p>
+            <p>Support</p>
+            <p>|</p>
+            <a href=""><span class="material-symbols-outlined">
+            person
+            </span></a>
+            <span class="material-symbols-outlined">search</span>
+            
+        </div>
 `
 }
 
@@ -57,18 +56,17 @@ let topnavbar= ()=>{
 let subnavbar= ()=>{
 
     return ` <div>
-            <h1>AD360</h1>
-        </div>
-        <div>
-        <a href="./product.html">Overview</a>
-        <a href="./features.html">Features</a>
-        <a href="./demo.html">Demo</a>
-        <a href="./documents.html">Documents</a>
-        <a href="./qoute.html">Get Quote</a>
-        <a href="./support.html">Support</a>
-        <button>Download
-            </button>
-        </div>`
+                 <p id="ad360">AD360</p>
+             </div>
+                <div>
+                    <a href="./product.html">Overview</a>
+                    <a href="./features.html">Features</a>
+                    <a href="./demo.html">Demo</a>
+                    <a href="./documents.html">Documents</a>
+                    <a href="./qoute.html">Get Quote</a>
+                    <a href="./support.html">Support</a>
+                    <button id="revert">Download</button>
+                </div>`
 }
 
 

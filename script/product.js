@@ -5,3 +5,13 @@ document.getElementById("prod-navbar").innerHTML= topnavbar()
 document.getElementById("sub-navbar").innerHTML= subnavbar()
 
 
+let revert= ()=>{
+
+   window.location.href= "./download.html"
+}
+
+document.getElementById("revert").addEventListener("click", revert)
+
+
+
+ 
