@@ -237,7 +237,7 @@ li > a {
    align-items: center;
    background-color: white;
    position: relative;
-   border-bottom: 1px solid gray;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .bottomHeaderSticky {
    position: fixed;
@@ -252,11 +252,9 @@ li > a {
 }
 .companyLogo > img {
    width: 70%;
-   /* height: 45px; */
 }
 .companyLogo > img + img {
    width: 15%;
-   /* height: 30px; */
    margin-left: 8px;
 }
 .reduceLogosize {
@@ -280,18 +278,221 @@ li > a {
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
    cursor: pointer;
 }
-.navMenu > li:hover {
-   color: rgb(7, 7, 7);
+.navMenu li {
+   padding: 0px 10px;
+   list-style: none;
+   cursor: pointer;
 }
+
+.navMenu > li:hover {
+   color: rgb(15, 15, 15);
+}
+
+#ProductMenu:hover > ul,
+#SolutionMenu:hover > ul,
+#CompanyMenu:hover > ul,
+#SupportMenu:hover > ul,
+#EventMenu:hover > ul {
+   display: block;
+}
+
+.productOptions {
+   position: absolute;
+   background: #333;
+   width: 350px;
+   height: 80vh;
+   padding: 10px 0px 0px 5px;
+   top: 50px;
+   left: -280px;
+   font-size: 0.9em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+   cursor: default;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.solutionOptions {
+   position: absolute;
+   background: #333;
+   width: 250px;
+   height: 80vh;
+   padding: 10px 0px 0px 5px;
+   top: 50px;
+   left: -180px;
+   font-size: 0.8em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+   cursor: default;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.optionSubOption1 {
+   position: absolute;
+   left: 100%;
+   top: 0px;
+   width: 45vw;
+   height: 80vh;
+   padding: 10px 0px;
+   background-color: white;
+   display: none;
+   justify-content: flex-start;
+   padding-left: 20px;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.optionSubOption1 > div {
+   width: 33%;
+}
+.navMenuOptions > li {
+   list-style: none;
+   width: 100%;
+   height: 50px;
+   cursor: pointer;
+   border-bottom: 1px solid #555;
+   padding: 0px;
+   /* border: 1px solid red; */
+}
+.navMenuOptions > li > a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   width: 100%;
+   height: 100%;
+}
+.navMenuOptions > li a::after {
+   content: ">";
+   display: inline-block;
+   position: absolute;
+   right: 10px;
+   color: #fff;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.navMenuOptions > li:hover {
+   background-color: rgba(123, 123, 123, 0.413);
+}
+.navMenuOptions > li:hover .optionSubOption1 {
+   display: flex;
+}
+
+.companyOptions {
+   position: absolute;
+   background: #333;
+   width: 210px;
+   height: 80vh;
+   padding: 10px 5px;
+   top: 50px;
+   left: 0;
+   line-height: 2.5;
+   font-size: 0.9em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+   cursor: default;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.supportOptions {
+   position: absolute;
+   background: #333;
+   width: 210px;
+   height: 80vh;
+   padding: 10px 5px;
+   top: 50px;
+   left: 0;
+   line-height: 2.5;
+   font-size: 0.9em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+   cursor: default;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.eventOptions {
+   position: absolute;
+   background: #333;
+   width: 200px;
+   height: 80vh;
+   padding: 10px 5px;
+   top: 50px;
+   left: 0;
+   line-height: 2.5;
+   font-size: 0.9em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+   cursor: default;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.optionSubOption {
+   position: absolute;
+   top: 0px;
+   left: 99%;
+   background-color: white;
+   padding: 20px;
+   height: 80vh;
+   width: 0;
+   display: none;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navMenu .bottombrder ul > li:hover a {
+   padding-bottom: 5px;
+   color: black;
+   border-bottom: 2px solid #e04b3a;
+}
+
+.navMenu > li > ul > li:hover > ul {
+   display: block;
+   width: 0%;
+   animation: showSubOption 0.4s ease-in-out both;
+}
+@keyframes showSubOption {
+   0% {
+      width: 0%;
+   }
+   50% {
+      width: 50%;
+   }
+   100% {
+      width: 110%;
+   }
+}
+.navMenu > li > ul > li > a {
+   color: white;
+   padding-bottom: 5px;
+   position: relative;
+}
+.lastoption {
+   text-align: center;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   height: 40px;
+   background-color: #e04b3a;
+}
+
+/* add traingle to botton of nav  */
 .navMenu > li:hover::after {
    content: "";
    position: absolute;
    top: 38px;
    border-left: 12px solid transparent;
    border-right: 12px solid transparent;
-   border-bottom: 12px solid black;
+   border-bottom: 12px solid #333;
    z-index: 99999;
    opacity: 0;
    animation: 0.5s opec forwards;
@@ -305,99 +506,49 @@ li > a {
    }
 }
 
-.productOptions {
+/* border bottum radius */
+.bottombrder > li:hover > a::after {
+   content: "";
+   display: block;
    position: absolute;
-   top: 98%;
-   left: -300px;
-   width: 90vw;
-   margin: auto;
-   height: 500px;
-   display: none;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   top: 20px;
+   bottom: -5px;
+   width: 0%;
+   height: 3px;
+   background: #e04b3a;
+   transition: width 0.6s ease-in-out;
+   animation: showSubOption 0.4s ease-in-out both;
 }
 
-.navMenuOptions > .tab-nav {
-   width: 30%;
-   background-color: black;
-   padding: 10px 0px;
-}
-
-.navMenuOptions > .tab-nav > li {
-   list-style: none;
-   width: 100%;
-   height: 50px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   cursor: pointer;
-   position: relative;
-   border-bottom: 1px solid #555;
-}
-.navMenuOptions > .tab-nav > li::after {
-   content: ">";
-   display: inline-block;
-   position: absolute;
-   right: 10px;
-   color: #fff;
-   top: 50%;
-   transform: translateY(-50%);
-}
-.navMenuOptions > .tab-nav > li:hover {
-   background-color: rgba(123, 123, 123, 0.413);
-}
-.navMenuOptions > .tab-nav > li > .tabIcon {
-   width: 15%;
+.navMenuOptions > li .tabIcon {
+   width: 10%;
    height: 100%;
    font-size: 20px;
+   padding-left: 5px;
    display: flex;
    justify-content: flex-end;
    align-items: center;
    color: #3197d7;
-   padding-right: 10px;
 }
 
-.navMenuOptions > .tab-nav > li > .tabContent {
+.navMenuOptions > li .tabContent {
    width: 85%;
    height: 100%;
    font-size: 30px;
    font-size: 12px;
-   padding: 5px 10px;
+   padding: 5px 20px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
 }
 
-.navMenuOptions > .tab-nav > li > .tabContent .subTitle {
+.navMenuOptions > li .tabContent .subTitle {
    font-size: 0.7em;
    opacity: 0.9;
 }
 
-.navMenuOptions > .tab-stages {
-   width: 70%;
-}
-.navMenuOptions > .tab-stages > div {
-   width: 100%;
-   padding: 10px 5px;
-   display: none;
-   justify-content: center;
-}
-
-.navMenuOptions > .tab-stages > div > div {
-   width: 30%;
-}
-
 .optionActive {
    display: flex;
-}
-
-.tag-nav-active {
-   color: black;
-   background-color: rgb(255, 255, 255);
-}
-.tag-nav-active .tabContent {
-   color: black;
-   font-weight: 600;
 }
 
 h2.tab-title {
@@ -413,6 +564,14 @@ h2.tab-title a {
    color: #e02b45;
    text-decoration: none !important;
    cursor: unset;
+}
+h2.tab-title:after {
+   content: "";
+   display: block;
+   height: 2px;
+   width: 50px;
+   background: #ffb50d;
+   margin-top: 12px;
 }
 span.hdng-desc {
    font-family: Zoho_Puvi_Regular;
@@ -442,21 +601,8 @@ span.hdng-desc {
 .products-lists > li > a > p {
    font-size: 0.7em;
 }
-ul li {
-   list-style: none;
-   text-decoration: none;
-}
-.navMenu > #SolutionMenu:hover::after {
-}
 
-.navMenu > #CompanyMenu:hover::after {
-}
-
-.navMenu > #SupportMenu:hover::after {
-}
-.navMenu > #EventMenu:hover::after {
-}
-
+/* downlaod btn */
 .downloadBtn {
    width: 15%;
    display: flex;
