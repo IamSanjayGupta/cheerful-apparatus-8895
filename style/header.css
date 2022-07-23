@@ -292,6 +292,7 @@ li > a {
 }
 
 #ProductMenu:hover > ul,
+#SolutionMenu:hover > ul,
 #CompanyMenu:hover > ul,
 #SupportMenu:hover > ul,
 #EventMenu:hover > ul {
@@ -314,22 +315,39 @@ li > a {
    border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.solutionOptions {
+   position: absolute;
+   background: #333;
+   width: 250px;
+   height: 80vh;
+   padding: 10px 0px 0px 5px;
+   top: 50px;
+   left: -180px;
+   font-size: 0.8em;
+   font-family: Zoho_Puvi_Medium;
+   display: none;
+   z-index: 99;
+   cursor: default;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 .optionSubOption1 {
    position: absolute;
    left: 100%;
    top: 0px;
-   width: 50vw;
+   width: 45vw;
    height: 80vh;
    padding: 10px 0px;
    background-color: white;
    display: none;
-   justify-content: space-around;
+   justify-content: flex-start;
+   padding-left: 20px;
    border-radius: 5px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .optionSubOption1 > div {
-   width: 30%;
+   width: 33%;
 }
 .navMenuOptions > li {
    list-style: none;
@@ -342,6 +360,7 @@ li > a {
 }
 .navMenuOptions > li > a {
    display: flex;
+   justify-content: center;
    align-items: center;
    color: white;
    width: 100%;
@@ -437,18 +456,18 @@ li > a {
 
 .navMenu > li > ul > li:hover > ul {
    display: block;
-   width: 100%;
+   width: 0%;
    animation: showSubOption 0.4s ease-in-out both;
 }
 @keyframes showSubOption {
    0% {
       width: 0%;
    }
-   25% {
+   50% {
       width: 50%;
    }
    100% {
-      width: 100%;
+      width: 110%;
    }
 }
 .navMenu > li > ul > li > a {
@@ -494,22 +513,22 @@ li > a {
    position: absolute;
    top: 20px;
    bottom: -5px;
-   width: 100%;
+   width: 0%;
    height: 3px;
    background: #e04b3a;
-   transition: width 0.2s;
+   transition: width 0.6s ease-in-out;
    animation: showSubOption 0.4s ease-in-out both;
 }
 
 .navMenuOptions > li .tabIcon {
-   width: 15%;
+   width: 10%;
    height: 100%;
    font-size: 20px;
+   padding-left: 5px;
    display: flex;
    justify-content: flex-end;
    align-items: center;
    color: #3197d7;
-   padding-right: 10px;
 }
 
 .navMenuOptions > li .tabContent {
