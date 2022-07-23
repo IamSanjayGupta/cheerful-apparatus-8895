@@ -21,7 +21,7 @@ const topHeader = () => {
          </div>
       </li>
       <li>
-         <a href="">Store</a>
+         <a href="./storePage.html">Store</a>
       </li>
       <li>Partners</li>
       <li>Affiliate</li>
@@ -156,7 +156,7 @@ const bottomHeader = () => {
                      </h2>
                      <ul class="products-lists">
                         <li>
-                           <a href="https://www.manageengine.com/active-directory-360/index.html?pos=MEhome&amp;loc=ProdMenu&amp;cat=IAM">
+                           <a href="product.html">
                               <span>AD360</span>
                               <p>Workforce identity and access management for hybrid ecosystems</p>
                            </a>

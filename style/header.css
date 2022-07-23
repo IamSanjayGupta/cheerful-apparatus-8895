@@ -521,7 +521,7 @@ li > a {
    height: 3px;
    background: #e04b3a;
    transition: width 0.6s ease-in-out;
-   animation: showSubOption 0.4s ease-in-out both;
+   animation: showSubOption 0.4s linear both;
 }
 
 .navMenuOptions > li .tabIcon {
