@@ -34,7 +34,7 @@ let topnavbar = () => {
 
         <div>
             <p>Products</p>
-            <p>Store</p>
+            <p><a href="storePage.html">Store</a></p>
             <p>Partners</p>
             <p>Affliiate</p>
             <p>Support</p>
