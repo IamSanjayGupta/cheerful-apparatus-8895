@@ -1,182 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ManageEngine-Log In</title>
-    <link rel="stylesheet" href="./style/account.css">
-    <style>
-
-
-    </style> 
+    <link rel="stylesheet" href="./style/account.css" />
 </head>
-<body onload="startSlideshow()">
-<div id="main_boxse">
-    <div id="login_container" >
-        
-        <img id="zoom" src="https://www.manageengine.com/images/logo/manageengine-logo.svg" alt=""> 
-        <div id="signin_head">
-            <h2 id="sets">Sign in </h2>
-            <p id="statement" >to access ManageEngine</p>
-            
+
+<body>
+    <div id="main_boxse">
+        <div id="login_container">
+            <img id="zoom" src="https://www.manageengine.com/images/logo/manageengine-logo.svg" alt="" />
+            <div id="signin_head">
+                <h2 id="sets">Sign in</h2>
+                <p id="statement">to access ManageEngine</p>
             </div>
             <form id="email_address">
-                <input type="text" id="email_buddy" placeholder="Email address or mobile number">
-                <input type="text" id="email_pasa" placeholder="  Password ">
-                <button id="login_button"  onclick="myfun(event)">Next</button>
-                <button id="forgot"> <a href="https://accounts.zoho.com/password?servicename=ManageEngine&serviceurl=https%3A%2F%2Fme.zoho.com%2Fportal%2Fmestore%2FredirectManageEngine.do&hide_signup=true"> Forgot Password?</a>  </button>
-                <div id="line">
-    
-                </div>
-    
+                <input type="text" id="email_buddy" placeholder="Enter username" />
+                <input type="password" id="email_pasa" placeholder="Password" />
+                <input id="login_button" type="submit" value="Login" />
+                <button id="forgot">Forgot Password?</button>
+                <div id="line"></div>
             </form>
             <div id="sign_in_using">
-            <p id="under_p" >
-                Sign in using
-            </p>
-            <div id="logee">
-                <div id="paper"  > <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=641273190747.apps.googleusercontent.com&scope=email%20profile&redirect_uri=https%3A%2F%2Faccounts.zoho.com%2Faccounts%2Foauthcallback&response_type=code&state=e841b5e70ec9de47dddd0c21b660f83379c545833bbea696ab5e1b1dadac65b4f3cc6223e3fea1147e041f07a23ed3494e126fba1dcbb17562892051cbbe92fc40d968a4d8153451093b8ccaebc19fbd48a64b436b1b25d9727390d30ddb25423fbab4cce7fd4425d6eaa656791bbbfa71a1427f6bc4f6a270ce122c6e0d7b7f08e741d9e7a2a646ccf9e59479436490&prompt=select_account&flowName=GeneralOAuthFlow"> <img id="none" src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg" alt=""></a> </div>
-                <div id="paper"> <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=1e14a5c7-f257-4f32-9c77-a8b8f6c88e0d&scope=https%3A%2F%2Fgraph%2Emicrosoft%2Ecom%2F%2Edefault&redirect_uri=https%3A%2F%2Faccounts.zoho.com%2Faccounts%2Foauthcallback&response_type=code&state=323ec21b583dcaf85107bf22934d8b9dd79fa2ff7f5d8a8d13fd9a311237db62ed43f52ffa675534dc02f475e39bdf624011edea94d9700f1add5d219b361565e0c4ee8756d167e9e4e4d7714d6258a0c950d6c2ae3235727ae3336ff42e32a6c831b93f07e024d2df1aa83f1873ed25aa005f0fea0ba0f7d7497fbd8b7ac1ef951c617104801f2a38fce3bf27e9c23f&sso_reload=true"> <img id="none" src="https://mcdn.wallpapersafari.com/medium/5/66/sMSHFr.jpg" alt=""></a></div>
-                <div id="paper"> <a href="https://www.linkedin.com/uas/login?session_redirect=%2Foauth%2Fv2%2Flogin-success%3Fapp_id%3D3971841%26auth_type%3DAC%26flow%3D%257B%2522scope%2522%253A%2522r_liteprofile%2Br_emailaddress%2522%252C%2522appId%2522%253A3971841%252C%2522authorizationType%2522%253A%2522OAUTH2_AUTHORIZATION_CODE%2522%252C%2522authFlowName%2522%253A%2522generic-permission-list%2522%252C%2522currentSubStage%2522%253A0%252C%2522state%2522%253A%2522fbe8c0ce0370624788b2487b6817e96e649c3ca72dc90248039a68b0f8df1616aa27fe1ab4c308183c8230794a9320c0f6df4aabc557aed9d5b37ef2c15b3d9aa3f46613a5991163c2fc9c7b9159b7446d54620ef6950829b5442c3262b61a28fd612d93b9b7a2f70f58352bcb274855e72874a9a010c43d3b311314bbf52b84f7ebe6bf453d80303413c0ef36160783%2522%252C%2522creationTime%2522%253A1658390545602%252C%2522currentStage%2522%253A%2522LOGIN_SUCCESS%2522%252C%2522redirectUri%2522%253A%2522https%253A%252F%252Faccounts.zoho.com%252Faccounts%252Foauthcallback%2522%257D&fromSignIn=1&trk=oauth&cancel_redirect=%2Foauth%2Fv2%2Flogin-cancel%3Fapp_id%3D3971841%26auth_type%3DAC%26flow%3D%257B%2522scope%2522%253A%2522r_liteprofile%2Br_emailaddress%2522%252C%2522appId%2522%253A3971841%252C%2522authorizationType%2522%253A%2522OAUTH2_AUTHORIZATION_CODE%2522%252C%2522authFlowName%2522%253A%2522generic-permission-list%2522%252C%2522currentSubStage%2522%253A0%252C%2522state%2522%253A%2522fbe8c0ce0370624788b2487b6817e96e649c3ca72dc90248039a68b0f8df1616aa27fe1ab4c308183c8230794a9320c0f6df4aabc557aed9d5b37ef2c15b3d9aa3f46613a5991163c2fc9c7b9159b7446d54620ef6950829b5442c3262b61a28fd612d93b9b7a2f70f58352bcb274855e72874a9a010c43d3b311314bbf52b84f7ebe6bf453d80303413c0ef36160783%2522%252C%2522creationTime%2522%253A1658390545602%252C%2522currentStage%2522%253A%2522LOGIN_SUCCESS%2522%252C%2522redirectUri%2522%253A%2522https%253A%252F%252Faccounts.zoho.com%252Faccounts%252Foauthcallback%2522%257D"><img id="none" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a></div>
-                <div id="paper"> <a href="https://www.facebook.com/v8.0/dialog/oauth?client_id=326461920176&scope=email&redirect_uri=https%3A%2F%2Faccounts.zoho.com%2Faccounts%2Foauthcallback&response_type=code&state=b70911eb13a8c42d8f9b5532c87fb03ec2a7ca959de38acb4d64724d68d492ce1e6f901d3fe0613bd824f1a142dade2b2b55e394c4515a6068ad8d474ce14169a15012d6a30d3d80034da1fdd8d1973173811381ebc3f2edbf175b9d3ef2e28a8327b1e1e7948e845f8b9e713b3e8e44a80c2ab21520d9eba316d3cd603907892bc2f2f9e6671ebcebf4bd1c55d102e5"><img id="none" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt=""></a></div>
-                <div id="paper"> <a href="https://slack.com/workspace-signin?redir=%2Foauth%3Fclient_id%3D453631396644.453643339940%26scope%3D%26user_scope%3Didentity.basic%252Cidentity.avatar%252Cidentity.email%26redirect_uri%3Dhttps%253A%252F%252Faccounts.zoho.com%252Faccounts%252Foauthcallback%26state%3D86d70bd4d741235c75170e613455ef330095aa52264a2d8fe1240f21fde771d38ac038ffc1ba419495ebd59f33e8e45b8b3aaf77449a2c19d2d82c1634f00f7a227f684cd9d84594139228a72a969450b17abad2aa6cc13bf14e9490a081e2e0e06a0539631449d811efbd234a62ccb1bda87325402cff087a607a28ee6ed609a6abcd1d7025883fa618626e46d66a69%26granular_bot_scope%3D1%26single_channel%3D0%26install_redirect%3D%26tracked%3D1%26response_type%3Dcode%26team%3D"> <img id="none" src="https://a.slack-edge.com/bv1-9/slack_logo-ebd02d1.svg" alt=""></a>  </div>
-    
-                   
+                <p id="under_p">Sign in using</p>
+                <div id="logee">
+                    <a
+                        href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=641273190747.apps.googleusercontent.com&scope=email%20profile&redirect_uri=https%3A%2F%2Faccounts.zoho.com%2Faccounts%2Foauthcallback&response_type=code&state=e841b5e70ec9de47dddd0c21b660f83379c545833bbea696ab5e1b1dadac65b4f3cc6223e3fea1147e041f07a23ed3494e126fba1dcbb17562892051cbbe92fc40d968a4d8153451093b8ccaebc19fbd48a64b436b1b25d9727390d30ddb25423fbab4cce7fd4425d6eaa656791bbbfa71a1427f6bc4f6a270ce122c6e0d7b7f08e741d9e7a2a646ccf9e59479436490&prompt=select_account&flowName=GeneralOAuthFlow">
+                        <img id="none"
+                            src="https://image.similarpng.com/very-thumbnail/2020/06/Logo-google-icon-PNG.png" alt="" />
+                    </a>
+                    <a href="">
+                        <img id="none" src="https://media.baamboozle.com/uploads/images/55449/1589908233_84755"
+                            alt="" />
+                    </a>
+                    <a href="">
+                        <img id="none" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" />
+                    </a>
+                    <a href="">
+                        <img id="none" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
+                            alt="" />
+                    </a>
+                    <a href="">
+                        <img id="none" src="https://a.slack-edge.com/bv1-9/slack_logo-ebd02d1.svg" alt="" />
+                    </a>
+                </div>
+            </div>
         </div>
+
+        <div id="boxes">
+            <div id="slideshow">
+                <img src="https://accounts.zoho.com/v2/components/images/mfa_illustration2x.png" alt="" />
+            </div>
+            <div id="medium_box2">
+                <h2 id="pass_less">Passwordless sign-in</h2>
+                <p id="move_less">
+                    Move away from risky passwords and <br />
+                    experience one-tap access to Download and install OneAuth.
+                </p>
+            </div>
         </div>
-        
     </div>
-    
-     <div id="boxes">
-       
-        <div id="slideshow"> 
-            
-
-            
-      
-    </div>
-        <div id="medium_box2">
-        <h2 id="pass_less">Passwordless sign-in</h2>
-        <p id="move_less">Move away from risky passwords and <br>
-             experience one-tap access to  
-            Download and install OneAuth.
-            </p>
-        </div>
-     </div>
-</div>
-
-
-
 </body>
+
 </html>
 <script>
-    let Data = JSON.parse(localStorage.getItem("user"))||[];
-function myfun(event){
-    event.preventDefault()
-    let flag=true;
-    let email_buddy=email_address.email_buddy.value;
-    if(email_buddy==""){
-        flag=false;
-    }
-    
-    let email_pasa=email_address.email_pasa.value;
-    if(email_pasa==""){
-        alert("Wrong credentials")
-        flag=false;
-    }
-    if( flag){
-    var result=true;
-        for(var i=0;i<Data.length;i++){
-            var obj=Data[i]
-            if(obj.email_buddy==email_buddy && obj.email_pasa==email_pasa){
-                result=true;
+    startSlideshow();
+
+
+    const logIn = async (event) => {
+        event.preventDefault();
+        let form = document.getElementById("email_address");
+        let loginData = {
+            username: form.email_buddy.value,
+            password: form.email_pasa.value,
+        };
+
+        try {
+            let loginAPIURL = `https://masai-api-mocker.herokuapp.com/auth/login`;
+            let res = await fetch(loginAPIURL, {
+                method: "POST",
+                body: JSON.stringify(loginData),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+            let responce = await res.json();
+            alert("Login Successful");
+            localStorage.setItem("loginToken", JSON.stringify({ username: loginData.username, token: responce.token }));
+            window.location.href = "index.html"
+        } catch (error) {
+            alert("Authentication Failed");
         }
-        
-    }
-    }
-    if(result){
-        alert("Next  Sucessful")
-    
-        // window.location.href="enginesign.html"
-    }
-    else if(flag){
-        alert("User doesn't exist, Next")
-    }
-    
-    }
+    };
+    document.querySelector("#email_address").addEventListener("submit", logIn);
+
 
     // ==========================================Slidesow========================================
 
+    let i = 0;
+    function startSlideshow() {
+        let obj = [
+            "https://accounts.zoho.com/v2/components/images/passwordless_illustration2x.png",
+            "https://accounts.zoho.com/v2/components/images/recovery_illustration2x.png",
+            "https://accounts.zoho.com/v2/components/images/mfa_illustration2x.png",
+        ];
+        let sl = document.getElementById("slideshow");
 
-    
-       
-        // let slideshow = document.querySelector("#slideshow")
-
-        // function disp(dat){
-        //     slideshow.innerHTML=null;
-        //     dat.forEach(function(ele){
-        //       let image = document.createElement("img")
-        //       //image.setAttribute("id","box")
-        //       image.src = ele.Image;
-        
-        //       //console.log(image)
-        //       slideshow.append(image)
-        //       image.append()  
-        //     }) 
-        // }
-
-        // disp(obj)
-        
-        
-        // let slideIn=0
-        // slide()
-        // function slide(){
-        // let i;
-        // let x = document.getElementsByTagName("img")
-        // for(i=0;i < 3;i++){
-        //     x[i].style.display = "none";
-        // }
-        // slideIn++;
-        // if(slideIn > 3) {slideIn=1}
-        // x[slideIn-1].style.display = "block"
-        // setTimeout(slide,3000);
-        // }
-
-        // let slideshow = document.querySelector("#slideshow")
-
-let i= 0
-    function startSlideshow(){
-
-
-        let obj=["https://accounts.zoho.com/v2/components/images/passwordless_illustration2x.png",
-        "https://accounts.zoho.com/v2/components/images/recovery_illustration2x.png",
-        "https://accounts.zoho.com/v2/components/images/mfa_illustration2x.png",
-               ];
-        let sl= document.getElementById("slideshow")
-
-        let id=  setInterval(function(){
-            console.log(i);
-
-            if(i == obj.length){
-                i=0
+        let id = setInterval(function () {
+            if (i == obj.length) {
+                i = 0;
             }
 
-            let image = document.createElement("img")
-            image.setAttribute("src", obj[i])
-            sl.innerHTML= null
-            sl.append(image)
-            i++
-
-        }, 3000)
+            let image = document.createElement("img");
+            image.setAttribute("src", obj[i]);
+            sl.innerHTML = null;
+            sl.append(image);
+            i++;
+        }, 3000);
     }
-
-    function pause(){
-        clearInterval(id)
-    }
-
-      
-
-
-
 </script>
