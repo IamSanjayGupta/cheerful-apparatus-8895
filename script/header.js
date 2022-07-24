@@ -24,3 +24,7 @@ function fixNavbar() {
       document.querySelector(".companyLogo").classList.remove("reduceLogosize");
    }
 }
+
+document.querySelector(".companyLogo").addEventListener("click", () => {
+   window.location.href = "../index.html";
+});

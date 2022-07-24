@@ -1157,7 +1157,7 @@ const bottomHeader = () => {
             <li><a>Workshops</a></li>
             <li><a>User conferences</a></li>
             <li><a>Industry events</a></li>
-            <li class="lastoption"><a>View all events</a></li>
+            <li class="lastoption"><a href="events.html">View all events</a></li>
          </ul>
       </li>
    </div>

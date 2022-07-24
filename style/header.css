@@ -256,6 +256,7 @@ li > a {
 }
 .companyLogo > img {
    width: 70%;
+   cursor: pointer;
 }
 .companyLogo > img + img {
    width: 15%;

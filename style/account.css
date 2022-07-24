@@ -398,12 +398,22 @@ h1 {
    height: 50px;
 }
 
-h2 {
+/* h2 {
    font-size: medium;
    margin-left: 10px;
 }
 
 p {
+   margin-left: 10px;
+   margin-bottom: 40px;
+} */
+
+#flex > h2 {
+   font-size: medium;
+   margin-left: 10px;
+}
+
+#flex > p {
    margin-left: 10px;
    margin-bottom: 40px;
 }
@@ -416,10 +426,11 @@ p {
 
 .resister {
    height: 45px;
+   font-weight: 700;
    margin-top: 30px;
    text-align: center;
    padding-top: 5px;
-   color: rgb(231, 210, 20);
+   color: rgb(255, 179, 0);
    font-size: large;
 }
 

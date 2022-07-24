@@ -335,7 +335,7 @@
 #userInfo > div:nth-child(2) > input {
    width: 90%;
    margin-bottom: 32px;
-
+   border: 1px solid gray;
    height: 25px;
 }
 #countries {
