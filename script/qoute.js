@@ -1,4 +1,3 @@
-
 import { subfooter, subnavbar, topnavbar } from "../components/proto.js";
 import { footer } from "../components/headerComponent.js";
 
@@ -57,3 +56,8 @@ let reset = () => {
 
 document.getElementById("reset").addEventListener("click", reset);
 
+let revert = () => {
+   window.location.href = "./download.html";
+};
+
+document.getElementById("revert").addEventListener("click", revert);

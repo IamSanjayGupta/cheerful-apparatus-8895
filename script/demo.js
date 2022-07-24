@@ -1,4 +1,3 @@
-
 import { subfooter, subnavbar, topnavbar } from "../components/proto.js";
 import { footer } from "../components/headerComponent.js";
 
@@ -28,3 +27,9 @@ let Submitform = (event) => {
 document.getElementById("form").addEventListener("submit", function () {
    Submitform(event);
 });
+
+let revert = () => {
+   window.location.href = "./download.html";
+};
+
+document.getElementById("revert").addEventListener("click", revert);
