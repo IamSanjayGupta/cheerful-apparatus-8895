@@ -28,7 +28,7 @@ let subfooter = () => {
 
 let topnavbar = () => {
    return `  <div id="logo">
-            <a href="./homepage.html"><img  src="https://www.manageengine.com/images/logo/manageengine-logo.svg" alt=""></a>
+            <a href="./index.html"><img  src="https://www.manageengine.com/images/logo/manageengine-logo.svg" alt=""></a>
             <img  src="https://www.manageengine.com/images/me-20.png" alt="">
         </div>
 

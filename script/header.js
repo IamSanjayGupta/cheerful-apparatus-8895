@@ -1,7 +1,7 @@
-import { topHeader, bottomHeader } from "../components/headerComponent.js";
+import { topHeader, bottomHeader, footer } from "../components/headerComponent.js";
 
 document.querySelector(".mainHeader").innerHTML = topHeader() + bottomHeader();
-
+document.getElementById("no_body").innerHTML = footer();
 // navbar fix
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
