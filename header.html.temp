@@ -203,7 +203,7 @@
             </div>
          </div>
       </div>
-      <div class="HomePage"></div>
+     
    </body>
 </html>
 <script src="./script/header.js" type="module"></script>

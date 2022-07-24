@@ -8,11 +8,13 @@
     <link rel="icon" href="assets\logo.png" type="image/x-icon" />
 
     <title>Billing Page</title>
+    <link rel="stylesheet" href="./style/header.css" />
     <link rel="stylesheet" href="./style/billingPage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 
 <body onload="getPrice()">
+    <div class="mainHeader"></div>
     <section>
         <div id="ospNav">
             <div id="subosp1">
@@ -512,7 +514,7 @@
                         <p>Expiration Date</p>
                         <h2>Grand Total</h2>
                     </div>
-                    <div>
+                    <div style="position: relative; margin-bottom: 100px;">
                         <input type="text" />
                         <img id="payimg" src="https://img.zohostatic.com/zohostore/Jul_07_2022_8/images/pay-method.png"
                             alt="" /><br />
@@ -577,7 +579,10 @@
             </div>
         </div>
     </section>
+    <!-- <div id="no_body"></div> -->
 </body>
-<script src="./script/billingPage.js"></script>
+
 
 </html>
+<script src="./script/billingPage.js"></script>
+<script src="./script/header.js" type="module"></script>

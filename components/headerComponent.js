@@ -28,9 +28,9 @@ const topHeader = () => {
       <li>
          <span><i class="fa-solid fa-user"></i></span>
          <div class="userDrop">
-            <a href="#">Login</a>
+            <a href="enginelogin.html">Login</a>
             <a>|</a>
-            <a href="#">Register</a>
+            <a href="enginesign.html">Register</a>
          </div>
       </li>
       <li>
@@ -1157,7 +1157,7 @@ const bottomHeader = () => {
             <li><a>Workshops</a></li>
             <li><a>User conferences</a></li>
             <li><a>Industry events</a></li>
-            <li class="lastoption"><a>View all events</a></li>
+            <li class="lastoption"><a href="events.html">View all events</a></li>
          </ul>
       </li>
    </div>
@@ -1167,8 +1167,7 @@ const bottomHeader = () => {
 </div>`;
 };
 
-let footer= ()=>{
-
+let footer = () => {
    return `<div id="under_box">
    <div id="foot_head">Company</div>
    <div id="usko">
@@ -1539,14 +1538,14 @@ let footer= ()=>{
                title="Follow us on LinkedIn"></a>
        </div>
        <div id="gudo">
-           <img src=""
+           <img src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Twitter-logo-transparent-PNG.png"
                alt="">
        </div>
        <div id="gudo">
-           <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Black-Logo.wine.svg">
+           <img src="https://w7.pngwing.com/pngs/1012/613/png-transparent-computer-icons-facebook-facebook-rectangle-desktop-wallpaper-brand-thumbnail.png">
        </div>
        <div id="gudo">
-           <img src="http://assets.stickpng.com/images/5ecec6ef73e4440004f09e75.png">
+           <img src="data:image/png;base64,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">
        </div>
        <div id="gudo">
            <img
@@ -1556,8 +1555,7 @@ let footer= ()=>{
    </div>
    <p id="division">ManageEngine is a division of <img id="zoho"
            src="https://www.manageengine.com/images/zoho.png" alt=""> Corp.</p>
-</div>`
-}
-
+</div>`;
+};
 
 export { topHeader, bottomHeader, footer };

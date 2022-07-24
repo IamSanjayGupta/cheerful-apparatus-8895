@@ -68,7 +68,6 @@
 }
 #leftDiv {
    border-right: 1px solid rgb(231, 226, 226);
-   height: 1400px;
    width: 25%;
    margin-top: 35px;
 }
@@ -335,10 +334,11 @@
 #userInfo > div:nth-child(2) > input {
    width: 90%;
    margin-bottom: 32px;
-
+   border: 1px solid gray;
    height: 25px;
 }
 #countries {
+   border: 1px solid gray;
    width: 90%;
    height: 27px;
    margin-bottom: 32px;
@@ -368,8 +368,7 @@
    align-items: center;
    /* border: 1px solid red; */
 }
-#userInfo > div:nth-child(3) > div:last-child > p:first-child {
-}
+
 #userInfo > div:nth-child(3) > div:last-child > p:last-child {
    margin-top: 10px;
 }
@@ -407,7 +406,7 @@
 #carddetailsDiv > div:last-child > input:first-child {
    width: 90%;
    margin-top: 18px;
-
+   border: 1px solid gray;
    height: 25px;
 }
 #payimg {
@@ -418,7 +417,7 @@
 #input01 {
    width: 90%;
    margin-top: 18px;
-
+   border: 1px solid gray;
    height: 25px;
 }
 #monyear {
@@ -428,6 +427,7 @@
 }
 #monyear > select {
    height: 25px;
+   border: 1px solid gray;
 }
 .hover {
    color: rgb(56, 56, 246);
@@ -440,25 +440,22 @@
 #checkoutbutton {
    background-color: #aad956;
    color: white;
-   height: 50px;
    border-radius: 10px;
    font-size: 21px;
-   border: none;
-   width: 60%;
-   margin-top: 35px;
+   width: fit-content;
+   padding: 10px 20px;
+   margin: 35px 0px;
 }
 #checkoutbutton1 {
    background-color: #aad956;
    color: white;
-   height: 50px;
    border-radius: 10px;
    font-size: 21px;
-   border: none;
-   width: 12%;
    position: absolute;
-   top: 1404px;
-   left: 940px;
    display: none;
+   width: fit-content;
+   padding: 10px 20px;
+   margin: 35px 0px;
 }
 #checkoutbutton1:hover {
    cursor: pointer;

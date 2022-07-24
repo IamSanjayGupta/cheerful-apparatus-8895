@@ -60,15 +60,13 @@
    cursor: pointer;
 }
 #divOuter {
-   width: 70%;
-   height: 500px;
+   width: 80%;
    margin: auto;
    display: flex;
    gap: 50px;
 }
 #leftDiv {
    border-right: 1px solid rgb(231, 226, 226);
-   height: 800px;
    width: 25%;
    margin-top: 35px;
 }
@@ -77,7 +75,7 @@
 }
 #head1 {
    color: #777777;
-   font-size: 23px;
+   font-size: 20px;
    font-weight: 300;
    margin-top: 30px;
    margin: 15px 0px;
@@ -88,7 +86,6 @@
 #subhead1 {
    display: none;
    color: #777777;
-
    font-weight: 300;
 }
 #subhead1 > p {
@@ -102,9 +99,8 @@
 }
 #head2 {
    color: #777777;
-   font-size: 22px;
+   font-size: 20px;
    font-weight: 300;
-
    margin: 15px 0px;
 }
 #head2:hover {
@@ -128,7 +124,7 @@
 }
 #head3 {
    color: #777777;
-   font-size: 22px;
+   font-size: 20px;
    font-weight: 300;
    margin: 15px 0px;
 }
@@ -152,7 +148,7 @@
 }
 #head4 {
    color: #777777;
-   font-size: 22px;
+   font-size: 20px;
    font-weight: 300;
    margin: 15px 0px;
 }
@@ -176,7 +172,7 @@
 }
 #head5 {
    color: #777777;
-   font-size: 22px;
+   font-size: 20px;
    font-weight: 300;
    margin: 15px 0px;
 }
@@ -200,7 +196,7 @@
 }
 #head6 {
    color: #777777;
-   font-size: 22px;
+   font-size: 20px;
    font-weight: 300;
    margin: 15px 0px;
 }
@@ -224,7 +220,7 @@
 }
 #head7 {
    color: #777777;
-   font-size: 22px;
+   font-size: 20px;
    font-weight: 300;
    margin: 15px 0px;
 }
@@ -248,7 +244,7 @@
 }
 #head8 {
    color: #777777;
-   font-size: 22px;
+   font-size: 20px;
    font-weight: 300;
    margin: 15px 0px;
 }
