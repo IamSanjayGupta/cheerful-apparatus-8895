@@ -1,5 +1,5 @@
 let subfooter = () => {
-   return `<h1 class="head">A complete suite of IAM and IT compliance solutions</h1>
+  return `<h1 class="head">A complete suite of IAM and IT compliance solutions</h1>
     <br>
     <div id="rel-prod">
         <div>Related Products</div>
@@ -27,8 +27,10 @@ let subfooter = () => {
 };
 
 let topnavbar = () => {
+
    return `  <div id="logo">
             <a href="./index.html"><img  src="https://www.manageengine.com/images/logo/manageengine-logo.svg" alt=""></a>
+
             <img  src="https://www.manageengine.com/images/me-20.png" alt="">
         </div>
 
@@ -49,7 +51,7 @@ let topnavbar = () => {
 };
 
 let subnavbar = () => {
-   return ` <div>
+  return ` <div>
                  <p id="ad360">AD360</p>
              </div>
                 <div>
@@ -62,5 +64,6 @@ let subnavbar = () => {
                     <button id="revert">Download</button>
                 </div>`;
 };
+
 
 export { subfooter, topnavbar, subnavbar };

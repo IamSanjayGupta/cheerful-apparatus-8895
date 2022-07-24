@@ -1,3 +1,4 @@
+
 import { subfooter, subnavbar, topnavbar } from "../components/proto.js";
 import { footer } from "../components/headerComponent.js";
 
