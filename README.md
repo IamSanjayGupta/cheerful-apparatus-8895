@@ -21,7 +21,7 @@
 - Address, Payement and Checkout feature done with LocalStorage.
 
 ## Link 
-https://stately-donut-ba34af.netlify.app/
+https://lucky-brigadeiros-3ea877.netlify.app
 
 ## Contributors  😇
 
