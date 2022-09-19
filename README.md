@@ -21,7 +21,7 @@
 - Address, Payement and Checkout feature done with LocalStorage.
 
 ## Link 
-https://lucky-brigadeiros-3ea877.netlify.app
+https://iamsanjaygupta.github.io/cheerful-apparatus-8895/
 
 ## Contributors  😇
 
